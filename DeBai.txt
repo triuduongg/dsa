@@ -1,0 +1,129 @@
+BT004 - Đường đi nhỏ nhất của quân mã
+ Báo lỗi
+Đề bài
+Cho bảng số nguyên không âm có kích thước 
+N
+x
+N
+NxN (0<
+N
+N≤100). Tìm giá trị đường đi nhỏnhất của quân mã xuất phát từ vị trí (
+x
+1
+x 
+1
+​
+ , 
+y
+1
+y 
+1
+​
+ ) đến vị trí (
+x
+2
+x 
+2
+​
+ , 
+y
+2
+y 
+2
+​
+ ) với 1≤
+x
+1
+x 
+1
+​
+ , 
+x
+2
+x 
+2
+​
+ , 
+y
+1
+y 
+1
+​
+ , 
+y
+2
+y 
+2
+​
+ ≤
+N
+N trên bảng số biết rằng:
+
+1) Quân mã di chuyển theo luật cờ quốc tế (xem hình minh họa), và
+
+2) Giá trị đường đi được tính bằng tổng giá trị của các ô đi qua.
+
+image.png
+
+
+Dữ liệu vào
+- Số lượng testcase 
+t
+t(
+t
+≥
+1
+t≥1).
+
+- Với mỗi testcase, nhập vào số nguyên dương 
+N
+N, bảng số kích thước 
+N
+x
+N
+NxN và hai cặp số (
+x
+1
+x 
+1
+​
+ , 
+y
+1
+y 
+1
+​
+ ) và (
+x
+2
+x 
+2
+​
+ , 
+y
+2
+y 
+2
+​
+ ). Mỗi số cách nhau bởi ít nhất một dấu cách.
+
+
+Dữ liệu ra
+- Mỗi dòng tương ứng với một testcase ghi một giá trị đường đi tìm được. Nếu không đến được thì ghi -1.
+
+
+Ví dụ
+Input #1 
+
+1
+5
+1 　2　　 3　 4　 5
+6　 7 　　8　 9 　10
+11　12　 13 　14　 15
+16 　17 　18 　19 　20
+21 　22　 23　 24　 25
+1  1  5  5
+Output #1 
+
+53
+
