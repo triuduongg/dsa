@@ -1165,6 +1165,995 @@ Output #1
 2 
 3
 
+CON1_13 - XÂU AB ĐẶC BIỆT
+ Báo lỗi
+Đề bài
+Một xâu kí tự S = (s1, s2, .., sn) được gọi là xâu AB độ dài n nếu với mọi si thuộc S thì si hoặc là kí tự A
+
+hoặc silà kí tự B . Ví dụ xâu S = “ABABABAB” là một xâu AB độ dài 8. Cho số tự nhiên N và số
+
+tự nhiên K (1 ≤ K<N≤15 được nhập từ bàn phím), hãy viết chương trình liệt kê tất cả các xâu AB có
+
+độ dài N chứaduy nhấtmột dãy K kí tự A liên tiếp.
+
+
+Dữ liệu vào
+Input:chỉ có một dòng ghi hai số N và K.
+
+
+Dữ liệu ra
+Output:ghi ra màn hình theo khuôn dạng:
+
+Dòng đầu tiên ghi lại số các xâu AB thỏa mãn yêu cầu bài toán;
+Những dòng kế tiếp, mỗi dòng ghi lại một xâu AB thỏa mãn. Các xâu được ghi ra theo thứ tự từ điển.
+
+Ví dụ
+Input #1 
+
+5 3
+Output #1 
+
+5
+AAABA
+AAABB
+ABAAA
+BAAAB
+BBAAA
+
+CON1_14 - TẬP QUÂN SỰ
+ Báo lỗi
+Đề bài
+Tại Chương Mỹ Resort, vào nửa đêm, cả trung đội nhận lệnh tập trung ở sân. Mỗi chiến sỹ được
+
+đánh số từ 1 đến N (1<N<40). Giám thị yêu cầu chọn ra một dãy K chiến sỹ để tập đội ngũ và cứ
+
+lần lượt duyệt hết tất cả các khả năng chọn K người như vậy từ nhỏ đến lớn (theo số thứ tự). Bài
+
+toán đặt ra là cho một nhóm K chiến sỹ hiện đang phải tập đội ngũ, hãy tính xem trong lượt chọn
+
+K người tiếp theo thì mấy người trong nhóm cũ sẽ được tạm nghỉ. Nếu đã là nhóm cuối cùng thì
+
+tất cả đều sẽ được nghỉ.
+
+
+Dữ liệu vào
+Dữ liệu vào:Dòng đầu ghi số bộ test, không quá 20. Mỗi bộ test viết trên hai dòng
+
+Dòng 1: hai số nguyên dương N và K (K<N)
+Dòng 2 ghi K số thứ tự của các chiến sỹ đang phải tập đội ngũ (viết từ nhỏ đến lớn)
+
+Dữ liệu ra
+Kết quả:Với mỗi bộ dữ liệu in ra số lượng chiến sỹ được tạm nghỉ.
+
+
+Ví dụ
+Input #1 
+
+3
+5 3
+1 3 5
+5 3
+1 4 5
+6 4
+3 4 5 6
+Output #1 
+
+1 
+2 
+4
+
+CON1_15 - HOÁN VỊ TIẾP THEO CỦA CHUỖI SỐ
+ Báo lỗi
+Đề bài
+Hãy viết chương trình nhận vào một chuỗi (có thể khá dài) các ký tự số và đưa ra màn hình hoán
+
+vị kế tiếp của các ký tự số đó (với ý nghĩa là hoán vị có giá trị lớn hơn tiếp theo nếu ta coi chuỗi đó
+
+là một giá trị số nguyên). Chú ý: Các ký tự số trong dãy có thể trùng nhau.
+
+Ví dụ:123 -> 132
+
+279134399742 -> 279134423799
+
+Cũng có trường hợp sẽ không thể có hoán vị kế tiếp. Ví dụ như khi đầu vào là chuỗi 987.
+
+
+Dữ liệu vào
+Dữ liệu vào:Dòng đầu tiên ghi số nguyên t là số bộ test (1 ≤ t ≤ 1000). Mỗi bộ test có một dòng,
+
+đầu tiên là số thứ tự bộ test, một dấu cách, sau đó là chuỗi các ký tự số, tối đa 80 phần tử.
+
+
+Dữ liệu ra
+Kết quả:Với mỗi bộ test hãy đưa ra một dòng gồm thứ tự bộ test, một dấu cách, tiếp theo đó là
+
+hoán vị kế tiếp hoặc chuỗi “BIGGEST” nếu không có hoán vị kế tiếp.
+
+
+Ví dụ
+Input #1 
+
+3
+1 123
+2 279134399742
+3 987
+Output #1 
+
+1 132
+2 279134423799
+3 BIGGEST
+
+CON1_16 - CHỌN SỐ TỪ MA TRẬN VUÔNG CẤP N
+ Báo lỗi
+Đề bài
+Cho ma trận vuông Ci,jcấp N (1≤ i, j ≤ N≤10) gồm N^2 số tự nhiên và số tự nhiên K (các số trong
+
+ma trận không nhất thiết phải khác nhau và đều không quá 100, K không quá 10^4). Hãy viết chương
+
+trình lấy mỗi hàng, mỗi cột duy nhất một phần tử sao cho tổng các phần tử này đúng bằng K.
+
+
+Dữ liệu vào
+Dữ liệu vào:Dòng 1 ghi hai số N và K. N dòng tiếp theo ghi ma trận C.
+
+
+Dữ liệu ra
+Kết quả:dòng đầu ghi số cách tìm được. Mỗi dòng tiếp theo ghi một cách theo vị trí của số đó
+
+trong lần lượt từng hàng của ma trận. Xem ví dụ để hiểu rõ hơn.
+
+
+Ví dụ
+Input #1 
+
+3 10
+2 4 3
+1 3 6
+4 2 4
+Output #1 
+
+2
+1 3 2
+3 2 1
+
+CON1_17 - TÌM BỘI SỐ
+ Báo lỗi
+Đề bài
+Cho số nguyên N. Nhiệm vụ của bạn cần tìm số nguyên X nhỏ nhất là bội của N, và X chỉ chứa hai
+
+chữ số 0 và 9.
+
+
+Dữ liệu vào
+Input:Dòng đầu tiên là số lượng bộ test T (T ≤ 10000). Mỗi bộ test chứa số nguyên N trên một
+
+dòng (1 ≤ N ≤ 500).
+
+
+Dữ liệu ra
+Output:Với mỗi test in ra đáp án tìm được trên một dòng.
+
+
+Ví dụ
+Input #1 
+
+3 
+2 
+5
+11
+Output #1 
+
+90
+90
+99
+
+CON1_18 - MÁY ATM
+ Báo lỗi
+Đề bài
+Một máy ATM hiện có n (n ≤ 30) tờ tiền có giá trị t[1], t[2], …, t[n]. Hãy tìm cách trả ít tờ nhất
+
+với số tiền đúng bằng S (các tờ tiền có giá trị bất kỳ và có thể bằng nhau)
+
+
+Dữ liệu vào
+Input:Dòng đầu tiên gồm 2 số nguyên n và S (S ≤ 10^9). Dòng thứ hai chứa n số nguyên t[1],
+
+t[2], …, t[n] (t[i] ≤ 10^9)
+
+
+Dữ liệu ra
+Output:Số tờ tiền ít nhất phải trả.
+
+
+Ví dụ
+Input #1 
+
+3 5
+1 4 5
+Output #1 
+
+1
+
+CON2_24 - DÃY CON TỔNG BẰNG K
+ Báo lỗi
+Đề bài
+Cho dãy số A[] = (a1, a2, .., an) và số tự nhiên K. Hãy đưa ra tất cả các dãy con của dãy số A[]
+
+sao cho tổng các phần tử của dãy con đó đúng bằng K. Các phần tử của dãy số A[] được giả
+
+thuyết là nguyên dương và không có các phần tử giống nhau. Ví dụ với dãy con A[] = {5, 10,
+
+15, 20, 25}, K = 50 ta có 3 dãy con {5, 10, 15, 20}, {5, 20, 25}, {10, 15, 25}.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào số N là số lượng phần tử của dãy số A[] và số K; dòng tiếp theo đưa vàoN phần tử của dãy số A[].
+T, N, A[i] thỏa mãn ràng buộc: 1≤T ≤100; 1≤N≤10; 1≤ K, A[i] ≤100.
+
+Dữ liệu ra
+Output:
+
+Đưa ra tất cả các dãy con của dãy số A[] thỏa mãn yêu cầu bài toán theo thứ tựtừ điển, trong đó mỗi dãy con được bao bởi các ký tự [, ]. Nếu không có dãy connào thỏa mãn yêu cầu bài toán, hãy đưa ra -1.
+
+Ví dụ
+Input #1 
+
+2
+5 50
+5 10 15 20 25
+8 53
+15 22 14 26 32 9 16 8
+Output #1 
+
+[5 10 15 20] [5 20 25] [10 15 25]
+[8 9 14 22] [8 14 15 16] [15 16 22]
+
+CON2_26 - ĐỔI CHỖ CÁC CHỮ SỐ
+ Báo lỗi
+Đề bài
+Cho số tự nhiên K và xâu ký tự các chữ số S. Nhiệm vụ của bạn là đưa ra số lớn nhất bằng
+
+cách thực hiện nhiều nhất K lần đổi chỗ các ký tự trong S. Ví dụ K =3 và S = “1234567” ta
+
+được “7654321”.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất là số K; dòng tiếp theo là xâu ký tự S.
+T, K, S thỏa mãn ràng buộc: 1≤T ≤100; 1≤K≤10; 1≤.lenght(S)≤7.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+
+Ví dụ
+Input #1 
+
+3 4
+1234567
+3
+3435335
+2
+1034
+Output #1 
+
+7654321
+5543333
+4301
+
+CON2_27 - CHIA MẢNG
+ Báo lỗi
+Đề bài
+Cho mảng các số nguyên A[] gồm N phần tử. Hãy chia mảng số nguyên A[] thành K tập con
+
+khác rỗng sao cho tổng các phần tử của mỗi tập con đều bằng nhau. Mỗi phần tử thuộc tập con
+
+xuất hiện duy nhất một lần trong tất cả các tập con. Ví dụ với A[] = {2, 1, 4, 5, 6}, K =3 ta có
+
+kết quả {2, 4}, {1, 5}, {6}.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số N và K; dòng tiếp theo đưa vào N số của mmảng A[]; các số được viết cách nhau một vài khoảng trống.
+T, N, K, A[i] thỏa mãn ràng buộc: 1≤T ≤100; 1≤N, K≤20, 0≤A[i]≤100.
+
+Dữ liệu ra
+Output:
+
+Đưa ra 1 nếu có thể chia tập con thành K tập thỏa mãn yêu cầu bài toán, ngược lại đưa ra 0.
+
+Ví dụ
+Input #1 
+
+2
+5 3
+2 1 4 5 6
+5 3
+2 1 5 5 6
+Output #1 
+
+1 
+0
+
+BT001 - Dãy con chung dài nhất của 3 dãy
+ Báo lỗi
+Đề bài
+Cho ba dãy số nguyên A, B và C với số phần tử lần lượt là 
+n
+A
+n 
+A
+​
+ , 
+n
+B
+n 
+B
+​
+ và 
+n
+C
+n 
+C
+​
+ trong đó 0<
+n
+A
+,
+n
+B
+,
+n
+C
+n 
+A
+​
+ ,n 
+B
+​
+ ,n 
+C
+​
+ ≤100. Hãy viết chương trình tìm độ dài dãy con chung dài nhấtcủa ba dãy số này.
+
+
+Dữ liệu vào
+- Số lượng testcase 
+t
+t(
+t
+≥
+1
+t≥1).
+
+- Mỗi testcase bao gồm 03 dòng, mỗi dòng bao gồm số nguyên dương 
+n
+X
+n 
+X
+​
+ là số phần tử của dãy 
+X
+X (
+X
+=
+A
+,
+B
+v
+a
+ˋ
+C
+X=A,Bv 
+a
+ˋ
+ C) và 
+n
+X
+n 
+X
+​
+ các số nguyên thuộc dãy. Mỗi số cách nhau bởi ít nhất một dấu cách.
+
+
+Dữ liệu ra
+- Mỗi dòng tương ứng với một testcase ghi độ dài dãy con chung tìm được.
+
+
+Ví dụ
+Input #1 
+
+2
+2 1 2
+3 1 3 2
+4 2 1 3 2
+3 1 2 3
+4 1 2 3 4
+5 5 1 2 4 3 
+Output #1 
+
+2
+3
+
+CON1_01 - XÂU NHỊ PHÂN KẾ TIẾP
+ Báo lỗi
+Đề bài
+Cho xâu nhị phân X[], nhiệm vụ của bạn là hãy đưa ra xâu nhị phân tiếp theo của X[].
+
+Ví dụ X[] =”010101” thì xâu nhị phân tiếp theo của X[] là “010110”.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu nhi phân X.
+T, X[] thỏa mãn ràng buộc: 1≤T≤100; 1≤length(X)≤103.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+
+Ví dụ
+Input #1 
+
+2
+010101
+111111
+Output #1 
+
+010110
+000000
+
+CON1_02 - TẬP CON KẾ TIẾP
+ Báo lỗi
+Đề bài
+Cho hai số N, K và một tập con K phần tử X[] =(X1, X2,.., XK) của 1, 2, .., N. Nhiệm vụ của
+
+bạn là hãy đưa ra tập con K phần tử tiếp theo của X[]. Ví dụ N=5, K=3, X[] ={2, 3, 4} thì tập
+
+con tiếp theo của X[] là {2, 3, 5}.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất là hai số N và K; dòng tiếp theo đưa vào K phần tử của X[] là một tập con K phần tử của 1, 2, .., N.
+T, K, N, X[] thỏa mãn ràng buộc: 1≤T≤100; 1≤K≤N≤103.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+
+Ví dụ
+Input #1 
+
+2
+5 3
+1 4 5
+5 3
+3 4 5
+Output #1 
+
+2 3 4
+1 2 3
+
+CON1_03 - HOÁN VỊ KẾ TIẾP
+ Báo lỗi
+Đề bài
+Cho số tự nhiên N và một hoán vị X[] của 1, 2, .., N. Nhiệm vụ của bạn là đưa ra hoán vị tiếp
+
+theo của X[]. Ví dụ N=5, X[] = {1, 2, 3, 4, 5} thì hoán vị tiếp theo của X[] là {1, 2, 3, 5, 4}.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất là số N; dòng tiếp theo đưa vào hoán vị X[] của 1, 2, .., N.
+T, N, X[] thỏa mãn ràng buộc: 1≤T≤100; 1≤ N≤103.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+
+Ví dụ
+Input #1 
+
+2
+5
+1 2 3 4 5
+5
+5 4 3 2 1
+Output #1 
+
+1 2 3 5 4
+1 2 3 4 5
+
+CON1_04 - XÂU AB CÓ ĐỘ DÀI N
+ Báo lỗi
+Đề bài
+Xâu ký tự str được gọi là xâu AB nếu mỗi ký tự trong xâu hoặc là ký tự ‘A’ hoặc là ký tự ‘B’.
+
+Ví dụ xâu str=”ABBABB” là xâu AB độ dài 6. Nhiệm vụ của bạn là hãy liệt kê tất cả các xâu
+
+AB có độ dài n.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên n.
+T, n thỏa mãn ràng buộc: 1≤T≤10; 1≤n≤10.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng. Mỗi xâu cách nhau 1 khoảng trống.
+
+Ví dụ
+Input #1 
+
+2 
+2 
+3
+Output #1 
+
+AA AB BA BB
+AAA AAB ABA ABB BAA BAB BBA BBB
+
+CON1_07 - PHÂN TÍCH SỐ
+ Báo lỗi
+Đề bài
+Cho số nguyên dương N. Nhiệm vụ của bạn là hãy liệt kê tất cả các cách phân tích số tự nhiên
+
+N thành tổng các số tự nhiên nhỏ hơn hoặc bằng N. Phép hoán vị vủa một cách được xem là
+
+giống nhau. Ví dụ với N = 5 ta có kết quả là: (5), (4, 1), (3, 2), (3, 1, 1), (2, 2, 1), (2, 1, 1, 1),
+
+(1, 1, 1, 1, 1) .
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên N được viết trên một dòng.
+T, n thỏa mãn ràng buộc: 1≤T, N≤10.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+
+Ví dụ
+Input #1 
+
+2 
+4 
+5
+Output #1 
+
+(4) (3 1) (2 2) (2 1 1) (1 1 1 1)
+(5) (4 1) (3 2) (3 1 1) (2 2 1) (2 1 1 1) (1 1 1 1 1)
+
+CON1_09 - MÃ GRAY 1
+ Báo lỗi
+Đề bài
+Số nhị phân được xem là cách mặc định biểu diễn các số. Tuy nhiên, trong nhiều ứng dụng
+
+của điện tử và truyền thông lại dùng một biến thể của mã nhị phân đó là mã Gray. Mã Gray
+
+độ dài n có mã đầu tiên là n số 0, mã kế tiếp của nó là một xâu nhị phân độ dài n khác biệt với
+
+xâu trước đó một bít. Ví dụ với n=3 ta có 23mã Gray như sau: 000, 001, 011, 010, 110, 111,
+
+101, 100. Hãy viết chương trình liệt kê các mã Gray có độ dài n.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên là số lượng test T.
+T dòng kế tiếp ghi lại mỗi dòng một test. Mỗi test là một số tự nhiên n.
+T, n thỏa mãn ràng buộc: 1≤T, n≤10.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+
+Ví dụ
+Input #1 
+
+2 
+3 
+4
+Output #1 
+
+000 001 011 010 110 111 101 100
+0000 0001 0011 0010 0110 0111 0101 0100 1100 1101 1111 1110 1010 1011 1001 1000
+
+CON1_10 - MÃ GRAY 2
+ Báo lỗi
+Đề bài
+Số nhị phân được xem là cách mặc định biểu diễn các số. Tuy nhiên, trong nhiều ứng dụng
+
+của điện tử và truyền thông lại dùng một biến thể của mã nhị phân đó là mã Gray. Mã Gray
+
+độ dài n có mã đầu tiên là n số 0, mã kế tiếp của nó là một xâu nhị phân độ dài n khác biệt với
+
+xâu trước đó một bít. Ví dụ với n=3 ta có 23mã Gray như sau: 000, 001, 011, 010, 110, 111,
+
+101, 100. Hãy viết chương trình chuyển đổi một xâu mã nhị phân X có độ dài n thành một
+
+xâu mã Gray.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên là số lượng test T.
+T dòng kế tiếp ghi lại mỗi dòng một test. Mỗi test là một xâu nhị phân độ dài n.
+T, n thỏa mãn ràng buộc: 1≤T, n≤10.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+
+Ví dụ
+Input #1 
+
+2
+01001
+01101
+Output #1 
+
+01101
+01011
+
+CON1_11 - MÃ GRAY 3
+ Báo lỗi
+Đề bài
+Số nhị phân được xem là cách mặc định biểu diễn các số. Tuy nhiên, trong nhiều ứng dụng
+
+của điện tử và truyền thông lại dùng một biến thể của mã nhị phân đó là mã Gray. Mã Gray
+
+độ dài n có mã đầu tiên là n số 0, mã kế tiếp của nó là một xâu nhị phân độ dài n khác biệt với
+
+xâu trước đó một bít. Ví dụ với n=3 ta có 2^3 mã Gray như sau: 000, 001, 011, 010, 110, 111,
+
+101, 100. Hãy viết chương trình chuyển đổi một xâu mã Gray X có độ dài n thành một xâu
+
+mã nhị phân.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên là số lượng test T.
+T dòng kế tiếp ghi lại mỗi dòng một test. Mỗi test là một xâu mã Gray độ dài n.
+T, n thỏa mãn ràng buộc: 1≤T, n≤10.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+
+Ví dụ
+Input #1 
+
+2
+01101
+01011
+Output #1 
+
+01001
+01101
+
+CON1_12 - XÂU NHỊ PHÂN CÓ K BIT 1
+ Báo lỗi
+Đề bài
+Hãy in ra tất cả các xâu nhị phân độ dài N, có K bit 1 theo thứ tự từ điển tăng dần.
+
+
+Dữ liệu vào
+Input:Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test gồm 2 số nguyên N, K (1 ≤ K ≤ N ≤ 16).
+
+
+Dữ liệu ra
+Output:Với mỗi test, in ra đáp án tìm được, mỗi xâu in ra trên một dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+4 2
+3 2
+Output #1 
+
+0011
+0101
+0110
+1001
+1010
+1100
+011
+101
+110
+
+CON9_26 - KIỂM TRA CHU TRÌNH SỬ DỤNG DISJOIN SET
+ Báo lỗi
+Đề bài
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Sử dụng Disjoin Set,hãy kiểm tra xem đồ thị có tồn tại chu trình hay không?
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào hai số |V|, |E| tương ứng với số đỉnh, số cạnh của đồ thị; Dòng tiếp theo đưa vàocác bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+- Đưa ra YES hoặc “NO” kết quả test theo từng dòng tương ứng với đồ thị tồn tại hoặckhông tồn tại chu trình.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9
+1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
+Output #1 
+
+YES
+
+CON9_29 - ĐƯỜNG ĐI VÀ CHU TRÌNH EULER VỚI ĐỒ THỊ CÓ HƯỚNG
+ Báo lỗi
+Đề bài
+Cho đồ thị vô hướng liên thông G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy kiểmtra xem đồ thị có đường đi Euler hay chu trình Euler hay không?
+
+Đường đi Euler bắt đầu tại một đỉnh, và kết thúc tại một đỉnh khác.
+
+Chu trình Euler bắt đầu tại một đỉnh, và kết thúc chu trình tại chính đỉnh đó.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào hai số |V|, |E| tương ứng với số đỉnh, số cạnh của đồ thị; Dòng tiếp theo đưa vàocác bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+Đưa ra 1, 2, 0 kết quả mỗi test theo từng dòng tương ứng với đồ thị có đường đi Euler,chu trình Euler và trường hợp không tồn tại.
+
+
+Ví dụ
+Input #1 
+
+1
+6 10
+1 2 1 3 2 3 2 4 2 5 3 4 3 5 4 5 4 6 5 6
+Output #1 
+
+2
+Input #2 
+
+1
+6 9
+1 2 1 3 2 3 2 4 2 5 3 4 3 5 4 5 4 6
+Output #2 
+
+1
+
+CON9_30 - CHU TRÌNH EULER TRONG ĐỒ THỊ CÓ HƯỚNG
+ Báo lỗi
+Đề bài
+Cho đồ thị có hướng liên thông yếu G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãykiểm tra xem đồ thị có chu trình Euler hay không?
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào hai số |V|, |E| tương ứng với số đỉnh, số cạnh của đồ thị; Dòng tiếp theo đưa vàocác bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+Đưa ra 1, 0 kết quả mỗi test theo từng dòng tương ứng với đồ thị có chu trình Euler vàtrường hợp không tồn tại đáp án.
+
+
+Ví dụ
+Input #1 
+
+2
+6 10
+1 2 2 4 2 5 3 1 3 2 4 3 4 5 5 3 5 6 6 4
+3 3
+1 2 2 3 1 3
+Output #1 
+
+1
+0
+
+CON9_31 - KIỂM TRA ĐỒ THỊ CÓ PHẢI LÀ CÂY HAY KHÔNG
+ Báo lỗi
+Đề bài
+Một đồ thị N đỉnh là một cây, nếu như nó có đúng N-1 cạnh và giữa 2 đỉnh bất kì, chỉ tồn tại duy nhất 1đường đi giữa chúng.
+
+Cho một đồ thị N đỉnh và N-1 cạnh, hãy kiểm tra đồ thị đã cho có phải là một cây hay không?
+
+
+Dữ liệu vào
+- Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+
+- Mỗi test bắt đầu bởi số nguyên N (1 ≤ N ≤ 1000).
+
+- N-1 dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết có cạnh nối giữa đỉnh u và v.
+
+
+Dữ liệu ra
+-Với mỗi test, in ra “YES” nếu đồ thị đã cho là một cây, in ra “NO” trong trường hợp ngược lại.
+
+
+Ví dụ
+Input #1 
+
+2
+4
+1 2
+1 3
+2 4
+4
+1 2
+1 3
+2 3
+Output #1 
+
+YES
+NO
+
+CON9_06 - DFS TRÊN ĐỒ THỊ VÔ HƯỚNG
+ Báo lỗi
+Đề bài
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toánduyệt theo chiều sâu bắt đầu tại đỉnh u∈V (DFS(u)=?)
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiênđưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuấtphát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồthị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+-Đưa ra danh sách các đỉnh được duyệt theo thuật toán DFS(u) của mỗi test theo khuôndạng của ví dụ dưới đây.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9 5
+1 2
+1 3
+2 3
+2 4
+3 4
+3 5
+4 5
+4 6
+5 6
+Output #1 
+
+5 3 1 2 4 6
+
+THITHU008 - Thời gian tốt nhất để bán cổ phiếu 04
+ Báo lỗi
+Đề bài
+Bạnđược cung cấp một mảng giá của một cổ phiếu nhất định trong prices ngày .prices[i]thứ i. Tìm lợi nhuận tối đa bạn có thể đạt được. Bạn có thể hoàn thành tối đahai giao dịch.
+
+Lưu ý: Bạn không được tham gia nhiều giao dịch cùng mộtlúc (tức là bạn phải bán cổ phiếu trước khi mua lại).
+
+Ví dụ:
+
+Đầuvào: giá = [3,3,5,0,0,3,1,4]
+
+Đầura: 6
+
+Giảithích: Mua ngày thứ 4 (giá = 0) và bán ngày thứ 6 (giá = 3), lợi nhuận = 3- 0 =3.
+
+Sau đómua vào ngày thứ 7 (giá = 1) và bán vào ngày thứ 8 (giá = 4), lợi nhuận = 4-1 =3
+
+
+Dữ liệu vào
+- Số lượng testcaset(t≥1).
+
+- Với mỗi testcase, nhậpvào kích thước của mảng và sau đó nhập mảng prices,1<= prices.length <= 10^5
+
+0<= prices[i] <= 10^5
+
+
+Dữ liệu ra
+- Mỗi dòng tương ứng với một testcase in ra kết quảtìm được.
+
+
+Ví dụ
+Input #1 
+
+1
+5
+1 2 3 4 5
+Output #1 
+
+4
+
+THITHU009 - Đồ thị 001
+ Báo lỗi
+Đề bài
+Trong bài toán này, cây là một đồ thị vô hướng được kết nối và không có chu trình. Bạn được cung cấp một biểu đồ bắt đầu dưới dạng cây với ncác nút được gắn nhãn từ 1đến n, với một cạnh bổ sung được thêm vào. Cạnh được thêm vào có hai đỉnh khác nhau được chọn từ 1 đến n, và không phải là cạnh đã tồn tại. Biểu đồ được biểu diễn dưới dạng một mảng edges có độ dài ntrong đó biểu thị rằng có một cạnh giữa các nút và trong đồ thị là edges[i] = [ai, bi]. Trả về một cạnh có thể loại bỏ để đồ thị thu được là một cây các n nút . Nếu có nhiều câu trả lời, hãy trả về câu trả lời xuất hiện cuối cùng trong đầu vào.
+
+image.png
+
+
+Dữ liệu vào
+Số lượng testcaset(t≥1).- Với mỗi testcase, nhập n số lượng cạnh đồ thị và sau đó nhập vào số cạnh của đồ thị
+
+n == edges.length3 <= n <= 1000
+
+edges[i].length == 21 <= ai < bi <= edges.length
+
+ai != bi
+
+Không có cạnh lặp lại.
+
+Đồ thị đã cho được kết nối.
+
+
+Dữ liệu ra
+- Mỗi dòng tương ứng với một testcase in ra kết quả tìm được.
+
+
+Ví dụ
+Input #1 
+
+1
+3
+1 2
+1 3
+2 3
+Output #1 
+
+2 3
+
+
+
+
+
+
 
 
 
