@@ -2149,6 +2149,2908 @@ Output #1
 
 2 3
 
+BT005 - Xâu mẹ chung ngắn nhất
+ Báo lỗi
+Đề bài
+Cho hai xâu ký tự 
+A
+A và 
+B
+B không bao gồm ký tự trống và các ký tự đặc biệtvới độ dài không quá 500. Xâu mẹ chung của hai xâu 
+A
+A và 
+B
+B là xâu mà cả hai xâu 
+A
+A và 
+B
+B là xâu con của nó. Hãy tìm độ dài của xâu mẹ chung ngắn nhất.
+
+
+Dữ liệu vào
+- Số lượng testcase 
+t
+t(
+t
+≥
+1
+t≥1).
+
+- Với mỗi testcase, nhập vào 2 xâu ký tự 
+A
+A và 
+B
+B. Hai xâu cách nhau bởi ít nhất một dấu cách.
+
+
+Dữ liệu ra
+- Mỗi dòng tương ứng với một testcase ghi độ dài xâu mẹ tìm được.
+
+
+Ví dụ
+Input #1 
+
+2
+ABCDE CODE
+XYZ    TKYAX
+Output #1 
+
+6
+7
+
+THITHU010 - Đồ thị 02
+ Báo lỗi
+Đề bài
+Trong bài toán này, cây có gốc là một đồ thị có hướng sao cho có chính xác một nút (gốc) mà tất cả các nút khác là con cháu của nút này, cộng với mỗi nút có chính xác một nút cha, ngoại trừ nút gốc không có nút gốc (nút cha mẹ). Đầu vào đã cho là một đồ thị có hướng bắt đầu dưới dạng cây có gốc với n các nút (với các giá trị riêng biệt từ 1 đến n), với một cạnh có hướng bổ sung được thêm vào. Cạnh được thêm vào có hai đỉnh khác nhau được chọn từ 1đến n, và không phải là cạnh đã tồn tại. Biểu đồ kết quả được đưa ra dưới dạng mảng 2D của edges. Mỗi phần tử của edges là một cặp đại diện cho một cạnh có hướng kết nối các nút  [ui,vi]. Trả về một cạnh có thể bị loại bỏ sao cho đồ thị thu được là một cây có gốc của n các nút . Nếu có nhiều câu trả lời, hãy trả về câu trả lời xuất hiện cuối cùng trong mảng 2D đã cho.image.png
+
+
+Dữ liệu vào
+- Số lượng testcaset(t≥1).
+
+- Với mỗi testcase, nhập n số lượng cạnhđồ thị và sau đó nhập vào số cạnh của đồ thị
+
+n == edges.length
+
+3 <= n <= 1000
+
+edges[i].length == 2
+
+1 <= ui, vi <= n
+
+ui !=vi.
+
+
+Dữ liệu ra
+Mỗi dòng tương ứng với một testcase in ra kết quảtìm được
+
+
+Ví dụ
+Input #1 
+
+1
+3
+1 2
+1 3
+2 3
+Output #1 
+
+2 3
+
+BT003 - Chia dãy số thành hai phần
+ Báo lỗi
+Đề bài
+Cho một dãy số nguyên dương 
+A
+A với 
+N
+N phần tử (0<
+N
+N<1001) có tổng không vượt quá 
+1
+0
+5
+10 
+5
+ . Hãy chia dãy thành hai nhóm sao cho tích của tổng các phần tử trong hai nhóm là lớn nhất.
+
+Ví dụ:
+
+a) Dãy số A với 5 phần tử: 1 2 3 4 5
+
+Tích lớn nhất của tổng hai nhóm chia được là 56 (Nhóm 1: 1 2 4 và nhóm 2: 3 5)
+
+b) Dãy số A với 1 phần tử: 3
+
+Tích lớn nhất của tổng hai nhóm chia được là 0.
+
+
+Dữ liệu vào
+- Số lượng testcase 
+t
+t(
+t
+≥
+1
+t≥1).
+
+- Với mỗi testcase, nhập vào số nguyên dương 
+N
+N và 
+N
+N số nguyên 
+A
+[
+i
+]
+A[i] (
+i
+=
+1
+,
+…
+,
+N
+i=1,…,N). Mỗi số cách nhau bởi ít nhất một dấu cách.
+
+
+Dữ liệu ra
+- Mỗi dòng tương ứng với một testcase ghi một giá trị tích lớn nhất tìmđược.
+
+
+Ví dụ
+Input #1 
+
+2
+5
+1 2 3 4 5
+6
+2 4 6 8 10 12
+Output #1 
+
+56
+440
+
+BT002 - Đường đi trong ma trận
+ Báo lỗi
+Đề bài
+Cho một bảng 
+A
+A gồm các số nguyên dương với kích thước 
+M
+x
+N
+MxN (
+M
+M dòng và 
+N
+N cột với 0<
+M
+,
+N
+M,N≤100). Từ ô (i, j) có thể di chuyển đến một trong 4 ô: ô bên trái (i-1, j), ô bên phải (i+1, j), ô bên trên(i, j-1) hoặc ô bên dưới (i, j+1) thuộc ma trận. Giá trị của đường đi được tính bằng tổng giá trị của các ô trên đường đi đó. Hãy xác định giá trị đường đi nhỏ nhất từ ô 
+(
+x
+1
+,
+y
+1
+)
+(x 
+1
+​
+ ,y 
+1
+​
+ ) đến ô 
+(
+x
+2
+,
+y
+2
+)
+(x 
+2
+​
+ ,y 
+2
+​
+ ) với 0<
+x
+1
+,
+x
+2
+x 
+1
+​
+ ,x 
+2
+​
+ ≤M và 0<
+y
+1
+,
+y
+2
+y 
+1
+​
+ ,y 
+2
+​
+ ≤N.
+
+
+Dữ liệu vào
+- Số lượng testcase 
+t
+t (
+t
+t≥1).
+
+- Với mỗi testcase, nhập vào 2 số nguyên dương 
+M
+,
+N
+M,N và bảng số 
+A
+A với MxN phần tửkhông âm và hai cặp số (
+x
+1
+x 
+1
+​
+ , 
+y
+1
+y 
+1
+​
+ ) đến ô (
+x
+2
+x 
+2
+​
+ , 
+y
+2
+y 
+2
+​
+ ). Mỗi số cách nhau bởi ít nhất một dấu cách.
+
+
+Dữ liệu ra
+- Mỗi dòng tương ứng với một testcase ghi tổng giá trị nhỏ nhất tìm được.
+
+
+Ví dụ
+Input #1 
+
+2
+3 3
+1 2 1
+4 1 3
+5 2 4
+1 1 3 3
+1 5
+8 8 8 2 6 
+1 5 1 1
+Output #1 
+
+10
+32
+
+CON2_21 - HOÁN VỊ XÂU KÝ TỰ
+ Báo lỗi
+Đề bài
+Cho xâu ký tự S bao gồm các ký tự in hoa khác nhau. Hãy đưa ra tất cả các hoán vị của xâu ký
+
+tự S. Ví dụ S=”ABC” ta có kết quả {ABC ACB BAC BCA CAB CBA}.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test là một xâu ký tự S được viết trên 1 dòng.
+T, S thỏa mãn ràng buộc: 1≤T≤10; 1≤length(S) ≤10;
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+
+Ví dụ
+Input #1 
+
+2
+AB
+ABC
+Output #1 
+
+AB BA
+ABC ACB BAC BCA CAB CBA
+
+CON3_10 - NỐI DÂY 1
+ Báo lỗi
+Đề bài
+Cho N sợi dây với độ dài khác nhau được lưu trong mảng A[]. Nhiệm vụ của bạn là nối N sợi dây thành
+
+một sợi sao cho tổng chi phí nối dây là nhỏ nhất. Biết chi phí nối sợi dây thứ i và sợi dây thứ j là tổng
+
+độ dài hai sợi dây A[i] và A[j].
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưa vào số lượng sợi dây N; dòng tiếp theo đưa vào N số A[i] là độ dài của các sợi dây; các số được viết cách nhau một vài khoảng trống.
+T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10^6; 0≤A[i]≤10^6.
+
+Dữ liệu ra
+Output:
+
+
+Đưa ra kết quả mỗi test theo từng dòng
+
+
+Ví dụ
+Input #1 
+
+2 
+4
+4 3 2 6
+5
+4 2 7 6 9
+Output #1 
+
+29
+62
+
+CON3_11 - NỐI DÂY 2
+ Báo lỗi
+Đề bài
+Cho N sợi dây với độ dài khác nhau được lưu trong mảng A[]. Nhiệm vụ của bạn là nối N sợi dây thành
+
+một sợi sao cho tổng chi phí nối dây là nhỏ nhất. Biết chi phí nối sợi dây thứ i và sợi dây thứ j là tổng
+
+độ dài hai sợi dây A[i] và A[j].
+
+
+Dữ liệu vào
+Dữ liệu vào
+
+Dòng đầu tiên là số nguyên N (N ≤ 2*10^6).
+
+Dòng tiếp theo gồm N số nguyên dương c[i] ( 1 ≤ A[i] ≤ 10^9).
+
+
+Dữ liệu ra
+Kết quả
+
+In ra đáp án của bài toán theo modulo 10^9+7
+
+
+Ví dụ
+Input #1 
+
+7
+2 4 1 2 10 2 3
+Output #1 
+
+59
+
+CON9_05 - BIỂU DIỄN ĐỒ THỊ CÓ HƯỚNG.
+ Báo lỗi
+Đề bài
+Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết chương trìnhthực hiện chuyển đổi biểu diễn đồ thị dưới dạng danh sách kề.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiênđưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị; |E| dòng tiếp theođưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+Đưa ra danh sách kề của các đỉnh tương ứng theo khuôn dạng của ví dụ dưới đây. Cácđỉnh trong danh sách in ra theo thứ tự tăng dần.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9
+1 2
+2 5
+3 1
+3 2
+3 5
+4 3
+5 4
+5 6
+6 4
+Output #1 
+
+1: 2
+2: 5
+3: 1 2 5
+4: 4
+5: 4 6
+6: 4
+
+CON9_07 - DFS TRÊN ĐỒ THỊ CÓ HƯỚNG
+ Báo lỗi
+Đề bài
+Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toánduyệt theo chiều sâu bắt đầu tại đỉnh u∈V (DFS(u)=?)
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào ba số |V|, |E|, u∈V tương ứng với số đỉnh, số cạnh và đỉnh bắt đầu duyệt; Dòng tiếptheo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+- Đưa ra danh sách các đỉnh được duyệt theo thuật toán DFS(u) của mỗi test theo khuôndạng của ví dụ dưới đây.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9 5
+1 2 2 5 3 1 3 2 3 5 4 3 5 4 5 6 6 3
+Output #1 
+
+5 4 3 1 2 6
+
+CON9_08 - BFS TRÊN ĐỒ THỊ VÔ HƯỚNG
+ Báo lỗi
+Đề bài
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toánduyệt theo chiều rộng bắt đầu tại đỉnh u∈V (BFS(u)=?)
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào ba số |V|, |E|, u∈V tương ứng với số đỉnh, số cạnh và đỉnh bắt đầu duyệt; Dòng tiếptheo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+- Đưa ra danh sách các đỉnh được duyệt theo thuật toán BFS(u) của mỗi test theo khuôndạng của ví dụ dưới đây.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9 1
+1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
+Output #1 
+
+1 2 3 5 4 6
+
+CON9_9 - BFS trên đồ thị có hướng
+ Báo lỗi
+Đề bài
+Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toánduyệt theo chiều rộng bắt đầu tại đỉnh u∈V (BFS(u)=?)
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào ba số |V|, |E|, u∈V tương ứng với số đỉnh, số cạnh và đỉnh bắt đầu duyệt; Dòng tiếptheo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+- Đưa ra danh sách các đỉnh được duyệt theo thuật toán BFS(u) của mỗi test theo khuôndạng của ví dụ dưới đây.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9 1
+1 2 2 5 3 1 3 2 3 5 4 3 5 4 5 6 6 4
+Output #1 
+
+1 2 5 4 6 3
+
+CON9_10 - TÌM ĐƯỜNG ĐI THEO DFS VỚI ĐỒ THỊ VÔ HƯỚNG
+ Báo lỗi
+Đề bài
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm đường đi từđỉnh s∈V đến đỉnh t∈V trên đồ thị bằng thuật toán DFS.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào bốn số |V|, |E|, s∈V, t∈V tương ứng với số đỉnh, số cạnh, đỉnh u, đỉnh v; Dòngtiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+- Đưa ra đường đi từ đỉnh s đến đỉnh t của mỗi test theo thuật toán DFS của mỗi test theokhuôn dạng của ví dụ dưới đây. Nếu không có đáp án, in ra -1.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9 1 6
+1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
+Output #1 
+
+1 2 3 4 5 6
+
+CON9_11 - TÌM ĐƯỜNG ĐI THEO DFS VỚI ĐỒ THỊ CÓ HƯỚNG
+ Báo lỗi
+Đề bài
+Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm đường đi từđỉnh s∈V đến đỉnh t∈V trên đồ thị bằng thuật toán DFS.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào bốn số |V|, |E|, s∈V, t∈V tương ứng với số đỉnh, số cạnh, đỉnh u, đỉnh v; Dòngtiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+- Đưa ra đường đi từ đỉnh s đến đỉnh t của mỗi test theo thuật toán DFS của mỗi test theokhuôn dạng của ví dụ dưới đây. Nếu không có đáp án, in ra -1.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9 1 6
+1 2 2 5 3 1 3 2 3 5 4 3 5 4 5 6 6 4
+Output #1 
+
+1 2 5 6
+
+CON9_12 - ĐƯỜNG ĐI THEO BFS TRÊN ĐỒ THỊ VÔ HƯỚNG
+ Báo lỗi
+Đề bài
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm đường đi từđỉnh s∈V đến đỉnh t∈V trên đồ thị bằng thuật toán BFS.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào bốn số |V|, |E|, s∈V, t∈V tương ứng với số đỉnh, số cạnh, đỉnh u, đỉnh v; Dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+-Đưa ra đường đi từ đỉnh s đến đỉnh t của mỗi test theo thuật toán BFS của mỗi test theokhuôn dạng của ví dụ dưới đây. Nếu không có đáp án, in ra -1.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9 1 6
+1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
+Output #1 
+
+1 2 5 6
+
+CON9_13 - ĐƯỜNG THI THEO BFS TRÊN ĐỒ THỊ CÓ HƯỚNG
+ Báo lỗi
+Đề bài
+Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm đường đi từđỉnh u∈V đến đỉnh v∈V trên đồ thị bằng thuật toán BFS.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào bốn số |V|, |E|, s∈V, t∈V tương ứng với số đỉnh, số cạnh, đỉnh u, đỉnh v; Dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+- Đưa ra đường đi từ đỉnh s đến đỉnh t của mỗi test theo thuật toán BFS của mỗi test theokhuôn dạng của ví dụ dưới đây. Nếu không có đáp án, in ra -1.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9 1 6
+1 2 2 5 3 1 3 2 3 5 4 3 5 4 5 6 6 4
+Output #1 
+
+1 2 5 6
+
+CON9_14 - KIỂM TRA ĐƯỜNG ĐI
+ Báo lỗi
+Đề bài
+Cho đồ thị vô hướng có N đỉnh và M cạnh. Có Q truy vấn, mỗi truy vấn yêu cầu trả lời câu hỏi giữa 2đỉnh x và y có tồn tại đường đi tới nhau hay không?
+
+
+Dữ liệu vào
+- Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+
+- Mỗi test gồm 2 số nguyên N, M (1 ≤ N, M ≤ 1000).
+
+- M dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết có cạnh nối giữa đỉnh u và v.
+
+- Dòng tiếp là số lượng truy vấn Q (1 ≤ Q ≤ 1000).
+
+- Q dòng tiếp theo, mỗi dòng gồm 2 số nguyên x và y.
+
+
+Dữ liệu ra
+Với mỗi truy vấn, in ra “YES” nếu có đường đi từ x tới y, in ra “NO” nếu ngược lại.
+
+
+Ví dụ
+Input #1 
+
+1
+5 5
+1 2
+2 3
+3 4
+1 4
+5 6
+2
+1 5
+2 4
+Output #1 
+
+NO
+YES
+
+CON9_15 - ĐẾM SỐ THÀNH PHẦN LIÊN THÔNG VỚI DFS.
+ Báo lỗi
+Đề bài
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm số thành phầnliên thông của đồ thị bằng thuật toán DFS.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào hai số |V|, |E| tương ứng với số đỉnh và số cạnh; Dòng tiếp theo đưa vào các bộ đôiu∈V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10
+3
+3
+  ; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+-Đưa ra số thành phần liên thông của đồ thị bằng thuật toán DFS.
+
+
+Ví dụ
+Input #1 
+
+1
+6 6
+1 2 1 3 2 3 3 4 3 5 4 5
+Output #1 
+
+2
+
+CON8_18 - Gieo mầm
+ Báo lỗi
+Đề bài
+Trên một giá có kích thước R x C (R hàng, C cột), một số hạt mầm đã được tra vào các ô. Mộtsố hạt mầm được bón thêm chất dinh dưỡng, nên đã nảy mầm sớm thành cây non.
+
+Mỗi ngày, các cây non sẽ lan truyền chất dinh dưỡng của nó cho các mầm ở ô xung quanh (trái,trên, phải, dưới), làm cho các hạt mầm này phát triển thành cây non. Tuy nhiên, có thể có mộtsố hạt mầm được gieo ở vị trí lẻ loi, do không nhận được chất dinh dưỡng nên không thể nảymầm.
+
+Các bạn hãy xác định xem cần ít nhất bao nhiêu ngày để tất cả các hạt đều mầm?
+
+
+Dữ liệu vào
+- Dòng đầu tiên gồm 2 số nguyên R và C (1 ≤ R, C ≤ 500).
+
+- R dòng tiếp theo, mỗi dòng gồm C số nguyên A[i][j].
+
+- A[i][j] = 0, ô (i, j) là ô trống.
+
+- A[i][j] = 1, ô (i, j) là hạt chưa nảy mầm.
+
+- A[i][j] = 2, ô (i, j) là cây non.
+
+
+Dữ liệu ra
+- In ra thời gian ngắn nhất để tất cả các hạt đều nảy mầm. Nếu có hạt nào chưa nảy mầm,in ra -1.
+
+
+Ví dụ
+Input #1 
+
+3 5
+2 1 0 2 1
+1 0 1 2 1
+1 0 0 2 1
+Output #1 
+
+2
+Input #2 
+
+3 5
+2 1 0 2 1
+0 0 1 2 1
+1 0 0 2 1
+Output #2 
+
+-1
+
+CON8_19 - DI CHUYỂN TRONG KHÔNG GIAN
+ Báo lỗi
+Đề bài
+Cho một hình hộp chữ nhật có kích thước A x B x C, trong đó A là chiều cao, B là chiều rộngvà C là chiều dài. Mỗi ô có thể là một ô trống ‘.’ hoặc vật cản ‘#’.
+
+Mỗi bước, bạn được phép di chuyển sang một ô kề bên cạnh (không được đi chéo).
+
+Nhiệm vụcủa bạn là tìm đường đi ngắn nhất bắt đầu ‘S’ tới vị trí kết thúc ‘E’.
+
+
+Dữ liệu vào
+- Dòng đầu tiên là số lượng bộ test T (1 ≤ N ≤ 50).
+
+- Mỗi test bắt đầu bởi 3 số nguyên A, B, C (A, B, C ≤ 30).
+
+- Tiếp theo là A khối, mỗi khối gồm B x C kí tự mô tả một lát cắt của hình hộp chữ nhật.
+
+Giữa 2 khối có một dấu xuống dòng.
+
+
+Dữ liệu ra
+- In ra một số nguyên là đường đi ngắn nhất từ S tới E. Nếu không di chuyển được, in ra -1.
+
+
+Ví dụ
+Input #1 
+
+2
+3 4 5
+S....
+.###.
+.##..
+###.#
+#####
+#####
+##.##
+##...
+#####
+#####
+#.###
+####E
+1 3 3
+S##
+#E#
+###
+Output #1 
+
+11
+-1
+
+CON8_20 - HEXGAME
+ Báo lỗi
+Đề bài
+HEXGAME là một trò chơi xếp hình gồm 10 miếng ghép hình lục giác đều, trên mỗi miếngghép được điền một số nguyên, có 8 miếng được điền số từ 1 đến 8 và có hai miếng điền số 0.
+
+Các miếng liên kết với nhau tạo thành lưới tổ ong. Ban đầu các miếng ghép ở vị trí như hình vẽ.
+
+Tại mỗi bước, chọn một miếng ghép có đúng 6 miếng ghép kề cạnh làm tâm, rồi xoay một nấc6 miếng ghép kề cạnh đó theo chiều kim đồng hồ. Như vậy chỉ có hai cách chọn tâm, đó là chọntâm bên trái và chọn tâm bên phải.
+
+image.png
+
+Yêu cầu: Cho một trạng thái của trò chơi (nhận được sau một dãy biến đổi từ trạng thái ban đầu),hãy tính số phép biến đổi ít nhất để đưa về trạng thái ban đầu.
+
+
+Dữ liệu vào
+- Dòng đầu tiên chứa 3 số ở 3 miếng ghép dòng thứ nhất (thứ tự từ trái qua phải).
+
+- Dòng đầu tiên chứa 4 số ở 4 miếng ghép dòng thứ hai (thứ tự từ trái qua phải).
+
+- Dòng đầu tiên chứa 3 số ở 3 miếng ghép dòng thứ ba (thứ tự từ trái qua phải).
+
+
+Dữ liệu ra
+-In ra một số nguyên là số phép biến đổi ít nhất để đưa được về trạng thái ban đầu.
+
+
+Ví dụ
+Input #1 
+
+1 0 2
+8 6 0 3
+7 5 4
+Output #1 
+
+5
+
+CON9_01 - CHUYỂN DANH SÁCH SANG DANH SÁCH KỀ.
+ Báo lỗi
+Đề bài
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết chương trìnhthực hiện chuyển đổi biểu diễn đồ thị dưới dạng danh sách kề.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào T là số lượng bộ test.
+
+- Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiênđưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị; |E| dòng tiếp theođưa vào các bộ đôi u ∈ V, v∈V tương ứng với một cạnh của đồ thị.
+
+- T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10^3; 1≤|E|≤|V|(|V|-1)/2;
+
+
+Dữ liệu ra
+- Đưa ra danh sách kề của các đỉnh tương ứng theo khuôn dạng của ví dụ dưới đây. Cácđỉnh trong danh sách in ra theo thứ tự tăng dần.
+
+
+Ví dụ
+Input #1 
+
+1
+6 9
+1 2
+1 3
+2 3
+2 5
+3 4
+3 5
+4 5
+4 6
+5 6
+Output #1 
+
+1: 2 3
+2: 1 3 5
+3: 1 2 4 5
+4: 3 5 6
+5: 2 3 4 6
+6: 4 5
+
+CON9_02 - CHUYỂN TỪ DANH SÁCH KỀ SANG DANH SÁCH CẠNH
+ Báo lỗi
+Đề bài
+Cho đơn đồ thị G vô hướng liên thông được mô tả bởi danh sách kề. Hãy in ra danh sách cạnh tương ứngcủa G.
+
+
+Dữ liệu vào
+- Dòng đầu tiên ghi số N là số đỉnh (1<N<50)
+
+- N dòng tiếp theo mỗi dòng ghi 1 danh sách kề lần lượt theo thứ tự từ đỉnh 1 đến đỉnh N
+
+
+Dữ liệu ra
+- Ghi ra lần lượt từng cạnh của đồ thị theo thứ tự tăng dần.
+
+
+Ví dụ
+Input #1 
+
+3
+2 3
+1 3
+1 2
+Output #1 
+
+1 2
+1 3
+2 3
+
+CON9_03 - CHUYỂN MA TRẬN KỀ SANG DANH SÁCH KỀ
+ Báo lỗi
+Đề bài
+Ma trận kề A của một đồ thị vô hướng là một ma trận chỉ có các số 0 hoặc 1 trong đó A[i][j] = 1 có ýnghĩa là đỉnh i kề với đỉnh j (chỉ số tính từ 1).
+
+Danh sách kề thì liệt kê các đỉnh kề với đỉnh đó theo thứ tự tăng dần.
+
+Hãy chuyển biểu diễn đồ thị từ dạng ma trận kề sang dạng danh sách kề.
+
+
+Dữ liệu vào
+- Dòng đầu tiên chứa số nguyên n – số đỉnh của đồ thị (1 < n ≤ 1000). n dòng tiếp theo, mỗi dòngcó n số nguyên có giá trị 0 và 1 mô tả ma trận kề của đồ thị.
+
+
+Dữ liệu ra
+- Gồm n dòng, dòng thứ i chứa các số nguyên là đỉnh có nối với đỉnh i và được sắp xếp tăng dần.
+
+- Dữ liệu đảm bảo mỗi đỉnh có kết nối với ít nhất 1 đỉnh khác.
+
+
+Ví dụ
+Input #1 
+
+3
+0 1 1
+1 0 1
+1 1 0
+Output #1 
+
+2 3
+1 3
+1 2
+
+CON9_04 - CHUYỂN DANH SÁCH KỀ SANG MA TRẬN KỀ
+ Báo lỗi
+Đề bài
+Cho đơn đồ thị vô hướng có n đỉnh dưới dạng danh sách kề.
+
+Hãy biểu diễn đồ thị bằng ma trận kề.
+
+
+Dữ liệu vào
+- Dòng đầu tiên chứa số nguyên n – số đỉnh của đồ thị (1 ≤ n ≤ 1000). n dòng tiếp theo, dòng thứi chứa các số nguyên là các đỉnh kề với đỉnh i.
+
+
+Dữ liệu ra
+Ma trận kề của đồ thị.
+
+
+Ví dụ
+Input #1 
+
+3
+2 3
+1 3
+1 2
+Output #1 
+
+0 1 1
+1 0 1
+1 1 0
+
+CON11_5 - DUYỆT CÂY 3
+ Báo lỗi
+Đề bài
+Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo Level-order. Phép duyệt level-order trên cây là phép thăm node theo từng mức của cây. Ví dụ với cây dưới đây sẽ cho ta kết quả của phép duyệt level-order: 20 8 22 4 12 10 14.
+
+image.png
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng test T.
+
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó
+
+u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
+
+T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10^3; 1≤u,v<10^4
+
+
+Dữ liệu ra
+Đưa ra kết quả phép duyệt level-order theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2 
+2
+1 2 R 1 3 L
+4
+10 20 L 10 30 R 20 40 L 20 60 R
+Output #1 
+
+1 3 2
+10 20 30 40 60
+
+Con11_7 - duyệt cây theo xoắn ốc
+ Báo lỗi
+Đề bài
+Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo xoắn ốc (spiral-order). Phép. Ví dụ với cây dưới đây sẽ cho ta kết quả của phép duyệt spiral-order: 1 2 3 4 5 6 7.
+
+image.png
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng test T.
+
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó
+
+u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, xđược viết cách nhau một vài khoảng trống.
+
+T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10^3; 1≤u, v≤10^4;
+
+
+Dữ liệu ra
+Đưa ra kết quả phép duyệt level-order theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+2
+1 2 R 1 3 L
+4
+10 20 L 10 30 R 20 40 L 20 60 R
+Output #1 
+
+1 3 2
+10 20 30 60 40
+
+CON11_9 - KIỂM TRA NODE LÁ
+ Báo lỗi
+Đề bài
+Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem tất cả các node lá của cây có cùng một mức hay không? Ví dụ với cây dưới đây sẽ cho ta kết quả là Yes.
+
+image.png
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng test T.
+
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưavào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đóu là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x
+
+được viết cách nhau một vài khoảng trống.
+
+T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10^3; 1≤u, v≤10^4;
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2 
+2
+1 2 R 1 3 L
+4
+10 20 L 10 30 R 20 40 L 20 60 R
+Output #1 
+
+1
+0
+
+CON8_07 - SỐ BDN 1
+ Báo lỗi
+Đề bài
+Ta gọi số nguyên dương K là một số BDN nếu các chữ số trong K chỉ bao gồm các 0 hoặc 1 có nghĩa. Ví dụ số K = 1, 10, 101. Cho số tự nhiên N (N<263). Hãy cho biết có bao nhiêu số BDN nhỏ hơn hoặc bằng N. Ví dụ N=100 ta có 4 số BDN bao gồm các số: 1, 10, 11, 100.
+
+
+Dữ liệu vào
+- Dòng đầu tiên ghi lại số tự nhiên T là số lượng Test;
+
+- T dòng kế tiếp mỗi dòng ghi lại một bộ Test. Mỗi test là một số tự nhiên N.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+3
+10
+100
+200
+Output #1 
+
+2
+4
+7
+
+CON8_08 - SỐ BDN 2
+ Báo lỗi
+Đề bài
+Ta gọi số nguyên dương K là một số BDN nếu các chữ số trong K chỉ bao gồm các 0 hoặc 1 cónghĩa. Ví dụ số K = 101 là số BDN, k=102 không phải là số BDN.Số BDN của N là số P =MN sao cho P là số BDN. Cho số tự nhiên N (N<1000), hãy tìm số
+
+BDN nhỏ nhất của N.
+
+Ví dụ. Với N=2, ta tìm được số BDN của N là P = 5*2=10. N = 17 ta tìm được số BDN của 17là P = 653 * 17=11101.
+
+
+Dữ liệu vào
+- Dòng đầu tiên ghi lại số tự nhiên T là số lượng Test;
+
+- T dòng kế tiếp mỗi dòng ghi lại một bộ Test. Mỗi test là một số tự nhiên N.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+3
+2
+12
+17
+Output #1 
+
+10
+11100
+11101
+
+CON8_09 - BIẾN ĐỔI S – T
+ Báo lỗi
+Đề bài
+Cho hai số nguyên dương S và T (S, T<10000) và hai thao tác (a), (b) dưới đây:
+
+Thao tác (a): Trừ S đi 1 (S = S-1) ;
+
+Thao tác (b): Nhân S với 2 ( S = S*2);
+
+Hãy dịch chuyển S thành T sao cho số lần thực hiện các thao tác (a), (b) là ít nhất. Ví dụ với S=2, T=5 thì số các bước ít nhất để dịch chuyển S thành T thông qua 4 thao tác sau:
+
+Thao tác (a): 2*2 = 4;
+
+Thao tác (b): 4-1 = 3;
+
+Thao tác (a): 3*2 = 6;
+
+Thao tác (b): 6-1 = 5;
+
+
+Dữ liệu vào
+- Dòng đầu tiên ghi lại số tự nhiên T là số lượng Test;
+
+- T dòng kế tiếp mỗi dòng ghi lại một bộ Test. Mỗi test là một bộ đôi S và T.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+3
+2 5
+3 7
+7 4
+Output #1 
+
+4
+4
+3
+
+CON8_10 - BIẾN ĐỔI SỐ TỰ NHIÊN
+ Báo lỗi
+Đề bài
+Cho số tự nhiên N (N<10^9) và hai phép biến đổi (a), (b) dưới đây.
+
+- Thao tác (a): Trừ N đi 1 (N=N-1). Ví dụ N=17, thao tác (a) biến đổi N = N-1 =16.
+
+- Thao tác (b): N = max(u,v) nếu u*v =N (u>1, v>1). Ví dụ N=16, thao tác (b) có thểbiến đổi N = max(2, 8)=8 hoặc N=max(4, 4)=4.
+
+Chỉ được phép sử dụng hai thao tác (a) hoặc (b), hãy biến đổi N thành 1 sao số các thao tác (a),(b) được thực hiện ít nhất. Ví dụ với N=17, số các phép (a), (b) nhỏ nhất biến đổi N thành 1 là 4bước như sau:
+
+Thao tác (a): N = N-1 = 17-1 = 16
+
+Thao tác (b): 16 = max(4,4) = 4
+
+Thao tác (b): 4 = max(2,2) = 2
+
+Thao tác (a): 2 = 2-1 = 1
+
+
+Dữ liệu vào
+-Dòng đầu tiên ghi lại số tự nhiên T là số lượng Test;
+
+- T dòng kế tiếp mỗi dòng ghi lại một bộ Test. Mỗi test là một số N.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+3
+17
+50
+100
+Output #1 
+
+4
+5
+5
+
+CON8_12 - KHOẢNG CÁCH XÂU KÝ TỰ
+ Báo lỗi
+Đề bài
+Cho tập n xâu ký tự S và hai xâu s, t€S. Ta giả thiết các xâu ký tự S[i]€S có độ dài bằng nhau.Hãy tìm khoảng cách đường đi ngắn nhất từ s đến t. Biết từ một xâu ký tự bất kỳ ta chỉ đượcphép dịch chuyển đến xâu khác với nó duy nhất 1 ký tự. Ví dụ ta có tập các từ S = { POON,TOON, PLEE, SAME, POIE, PLEA, PLIE, POIN }, s = TOON, t = PLEA ta có độ dài đườngđi ngắn nhất là 7 tương ứng với các phép dịch chuyển :
+
+TOON -> POON –> POIN –> POIE –>PLIE –> PLEE –> PLEA.
+
+
+Dữ liệu vào
+-Dòng đầu tiên đưa vào số lượng test T (T≤100).
+
+- Mỗi test được tổ chức thành 2 dòng. Dòng thứ nhất ghi lại n là số từ trong S và haitừ s, t. Dòng thứ 2 đưa vào n xâu xâu ký tự của S; các xâu ký tự được viết cáchnhau một vài khoảng trống, có độ dài không vượt quá 10 kí tự.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+1
+8 TOON PLEA
+POON TOON PLEE SAME POIE PLEA PLIE POIN
+Output #1 
+
+7
+
+CON8_16 - Quay hình vuông
+ Báo lỗi
+Đề bài
+Có một chiếc bảng hình chữ nhật với 6 miếng ghép, trên mỗi miếng ghép được điền một sốnguyên trong khoảng từ 1 đến 6. Tại mỗi bước, chọn một hình vuông (bên trái hoặc bên phải),rồi quay theo chiều kim đồng hồ.
+
+image.png
+
+Yêu cầu: Cho một trạng thái của bảng, hãy tính số phép biến đổi ít nhất để đưa bảng đến trạngthái đích.
+
+
+Dữ liệu vào
+- Dòng đầu tiên chứa 6 số là trạng thái bảng ban đầu (thứ tự từ trái qua phải, dòng 1 tới dòng 2).
+
+- Dòng thứ hai chứa 6 số là trạng thái bảng đích (thứ tự từ trái qua phải, dòng 1 tới dòng 2).
+
+
+Dữ liệu ra
+-In ra một số nguyên là đáp số của bài toán.
+
+
+Ví dụ
+Input #1 
+
+1 2 3 4 5 6
+4 1 2 6 5 3
+Output #1 
+
+2
+
+CON5_25 - Con ếch
+ Báo lỗi
+Đề bài
+Một con ếch có thể nhảy 1, 2, 3 bước để có thể lên đến một đỉnh cần đến. Hãy đếm số các cách con ếch có thể nhảy đến đỉnh.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là số n là số bước con ếch có thểlên được đỉnh.
+
+T, n thỏa mãn ràng buộc: 1≤T≤100; 1≤n ≤50.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng
+
+
+Ví dụ
+Input #1 
+
+2 
+1 
+5
+Output #1 
+
+1
+13
+
+CON5_27 - Cái Túi
+ Báo lỗi
+Đề bài
+Một người có cái túi thể tích V (V<1000). Anh ta có N đồ vật cần mang theo (N≤1000), mỗi đồ vật có thể tích là A[i] (A[i]≤100) và giá trị là C[i] (C[i]≤100). Hãy xác định tổng giá trị lớn nhất của các đồ vật mà người đó có thể mang theo, sao cho tổng thể tích không vượt quá V.
+
+
+Dữ liệu vào
+Dòng đầu ghi số bộ test T (T<10)
+
+Mỗi bộ test gồm ba dòng. Dòng đầu ghi 2 số N và V. Dòng tiếp theo ghi N số của mảng A.Sau đó là một dòng ghi N số của mảng C.
+
+Dữ liệu vào luôn đảm bảo không có đồ vật nào có thể tích lớn hơn V
+
+
+Dữ liệu ra
+Với mỗi bộ test, ghi trên một dòng giá trị lớn nhất có thể đạt được.
+
+
+Ví dụ
+Input #1 
+
+1
+15 10
+5 2 1 3 5 2 5 8 9 6 3 1 4 7 8
+1 2 3 5 1 2 5 8 7 4 1 2 3 2 1
+Output #1 
+
+15
+
+CON5_29 - giải mã
+ Báo lỗi
+Đề bài
+Một bản tin M đã mã hóa bí mật thành các con số theo ánh xạ như sau: ‘A’->1, ‘B’->2, .., ‘Z’->26. Hãy cho biết có bao nhiêu cách khác nhau để giải mã bản tin M. Ví dụ với bản mã M=”123” nó có thể được giải mã thành ABC (1 2 3), LC (12 3), AW(1 23)
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu ký tự số M.
+
+T, M thỏa mãn ràng buộc: 1≤T≤100; 1≤length(M)≤40.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+123
+2563
+Output #1 
+
+3
+2
+
+CON5_30 - TỔNG BÌNH PHƯƠNG
+ Báo lỗi
+Đề bài
+Mọi số nguyên dương N đều có thể phân tích thành tổng các bình phương của các số nhỏ hơn N. Ví dụ số 100 = 10^2hoặc 100 = 5^2+ 5^2+ 5^2+ 5^2. Cho số nguyên dương N. Nhiệm vụ của bạn là tìm số lượng ít nhất các số nhỏ hơn N mà có tổng bình phương bằng N.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi test là một số tự nhiên N được viết trên1 dòng.
+
+T, N thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10000.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+3
+100
+6
+2
+Output #1 
+
+1
+3
+1
+
+CON5_28 - Biến đổi xâu
+ Báo lỗi
+Đề bài
+Cho hai xâu ký tự str1, str2 bao gồm các ký tự in thường và các thao tác dưới đây:
+
+Insert:chèn một ký tự bất kỳ vào str1.
+
+Delete:loại bỏ một ký tự bất kỳ trong str1.
+
+Replace:thay một ký tự bất kỳ trong str1.
+
+Nhiệm vụ của bạn là đếm số các phép Insert, Delete, Replace ít nhất thực hiện trên str1 để trở thành str2
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là bộ đôi hai xâu str1 và str2.
+
+T, str1, str2 thỏa mãn ràng buộc: 1≤T≤100; 1≤length(str1),length(str2) ≤100.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng
+
+
+Ví dụ
+Input #1 
+
+1
+geek gesek
+Output #1 
+
+1
+
+CON5_1 - XÂU CON CHUNG DÀI NHẤT
+ Báo lỗi
+Đề bài
+Cho 2 xâu S1 và S2. Hãy tìm xâu con chung dài nhất của 2 xâu này(các phần tử không nhất thiết phải liên tiếp nhau).
+
+
+Dữ liệu vào
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test gồm hai dòng, mô tả xâu S1 và S2, mỗi xâu có độ dài không quá 1000 và chỉ gồm các chữ cái in thường.
+
+
+Dữ liệu ra
+Với mỗi test, in ra độ dài dãy con chung dài nhất trên một dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+aggtab
+axtxayb
+aa
+bb
+Output #1 
+
+4
+0
+
+CON8_01 - CẤU TRÚC DỮ LIỆU HÀNG ĐỢI 1
+ Báo lỗi
+Đề bài
+Ban đầu cho một queue rỗng. Bạn cần thực hiện các truy vấn sau:
+
+1. Trả về kích thước của queue
+
+2. Kiểm tra xem queue có rỗng không, nếu có in ra “YES”, nếu không in ra “NO”.
+
+3. Cho một số nguyên và đẩy số nguyên này vào cuối queue.
+
+4. Loại bỏ phần tử ở đầu queue nếu queue không rỗng, nếu rỗng không cần thực hiện.
+
+5. Trả về phần tử ở đầu queue, nếu queue rỗng in ra -1.
+
+6. Trả về phần tử ở cuối queue, nếu queue rỗng in ra -1.
+
+
+Dữ liệu vào
+- Dòng đầu tiên chứa số nguyên T là số bộ dữ liệu, mỗi bộ dữ theo dạng sau.
+
+- Dòng đầu tiên chứa số nguyên n - lượng truy vấn (1 ≤ n ≤ 1000)
+
+- N dòng tiếp theo, mỗi dòng sẽ ghi loại truy vấn như trên, với truy vấn loại 3 sẽ có thêm một số nguyên,không quá 10^6
+
+
+Dữ liệu ra
+- In ra kết quả của các truy vấn..
+
+
+Ví dụ
+Input #1 
+
+1
+14
+3 1
+3 2
+3 3
+5
+6
+4
+4
+4
+4
+4
+3 5
+3 6
+5
+1
+Output #1 
+
+1
+3
+5
+2
+
+CON8_02 - CẤU TRÚC DỮ LIỆU HÀNG ĐỢI 2
+ Báo lỗi
+Đề bài
+Yêu cầu bạn xây dựng một queue với các truy vấn sau đây:
+
+“PUSH x”: Thêm phần tử x vào cuối của queue (0 ≤ x ≤ 1000).
+
+“PRINTFRONT”: In ra phần tử đầu tiên của queue. Nếu queue rỗng, in ra “NONE”.
+
+“POP”: Xóa phần tử ở đầu của queue. Nếu queue rỗng, không làm gì cả.
+
+
+Dữ liệu vào
+- Dòng đầu tiên là số lượng truy vấn Q (Q ≤ 100000).
+
+- Mỗi truy vấn có dạng như trên.
+
+
+Dữ liệu ra
+-Với mỗi truy vấn “PRINT”, hãy in ra phần tử đầu tiên của queue. Nếu queue rỗng, in ra “NONE”.
+
+
+Ví dụ
+Input #1 
+
+9
+PUSH 1
+PUSH 2
+POP
+PRINTFRONT
+PUSH 3
+PRINTFRONT
+POP
+POP
+PRINTFRONT
+Output #1 
+
+2
+2
+NONE
+
+CON8_4 - GIÁ TRỊ NHỎ NHẤT CỦA XÂU
+ Báo lỗi
+Đề bài
+Cho xâu ký tự S[] bao gồm các ký tự in hoa [A, B, ...,Z]. Ta định nghĩa giá trị của xâu S[] làtổng bình phương số lần xuất hiện mỗi ký tự trong xâu. Ví dụ với xâu S[] = “AAABBCD” ta cóF(S) = 
+3
+2
+3 
+2
+  + 
+2
+2
+2 
+2
+  + 
+1
+2
+1 
+2
+  + 
+1
+2
+1 
+2
+  = 15. Hãy tìm giá trị nhỏ nhất của xâu S[] sau khi loại bỏ K ký tự trongxâu.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào số lượng test 
+T
+T (
+T
+≤
+100
+T≤100).
+
+- Mỗi test được tổ chức thành 2 dòng. Dòng thứ nhất ghi lại số 
+K
+K. Dòng thứ 2 ghi lại xâu ký tự S[] có độ dài không vượt quá 
+1
+0
+6
+10 
+6
+ .
+
+
+Dữ liệu ra
+- Đưa ra giá trị nhỏ nhất của mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+0
+ABCC
+1
+ABCC
+Output #1 
+
+6
+3
+
+CON8_05 - SỐ NHỊ PHÂN TỪ 1 ĐẾN N
+ Báo lỗi
+Đề bài
+Cho số tự nhiên n. Hãy in ra tất cả các số nhị phân từ 1 đến n.
+
+
+Dữ liệu vào
+- Dòng đầu tiên ghi lại số lượng test T (T≤100).
+
+- Mỗi test là một số tự nhiên n được ghi trên một dòng (n≤10000).
+
+
+Dữ liệu ra
+- Đưa ra kết quả mỗi test trên một dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+2
+5
+Output #1 
+
+1 10
+1 10 11 100 101 110
+
+CON5_13 - SỐ UGLY
+ Báo lỗi
+Đề bài
+Số Ugly là các số chỉ có ước số là 2, 3, 5. Theo qui ước số 1 cũng là 1 số Ugly. Dưới đây là 11 số Ugly đầu tiên: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15. Cho số tự nhiên N, nhiệm vụ của bạn là tìm số Ugly thứ N.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T. Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên N được viết trên một dòng. T, N thỏa mãn ràng buộc: 1 ≤ T ≤ 100; 1 ≤ N ≤ 10^4.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+10
+4
+Output #1 
+
+12
+4
+
+CON5_16 - TỔNG LỚN NHẤT CỦA DÃY CON TĂNG DẦN
+ Báo lỗi
+Đề bài
+Cho dãy số A[] gồm N số. Nhiệm vụ của bạn là tìm tổng lớn nhất của dãy con được sắp theo thứ tự tăng dần của dãy A[]. Ví dụ với dãy A[] = {1, 101, 2, 3, 100, 4, 5} ta có kết quả là 106 = 1 + 2 + 3 + 100. Với dãy A[] = {10, 7, 5} ta có kết quả là 10. Với dãy A[] = {1, 2, 3, 5} ta có kết quả là 11.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưavào N là số phần tử của dãy A[]; dòng tiếp theo đưa vào N số A[i]; các số được viết
+
+cách nhau một vài khoảng trống.
+
+T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤N ≤10^3; 0≤A[i] ≤10^3
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+
+Ví dụ
+Input #1 
+
+3
+7
+1 101 2 3 100 4 5
+3
+10 7 5
+4
+1 2 3 5
+Output #1 
+
+106
+10
+11
+
+CON5_17 - DÃY SỐ BI-TONIC
+ Báo lỗi
+Đề bài
+Một dãy số được gọi là Bi-tonic nếu nó được chia thành hai dãy đầu tăng dần và dãy tiếp theo giảm dần. Nhiệm vụ của bạn là tìm tổng lớn nhất dãy con Bi-tonic của dãy số A[]. Ví dụ với dãy A[] = {1, 15, 51, 45, 33, 100, 12, 18, 9} ta có kết quả là 194 tương ứng với dãy Bi-tonic {1, 15, 51, 100, 18, 9}.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưavào N là số phần tử của dãy A[]; dòng tiếp theo đưa vào N số A[i]; các số được viết
+
+cách nhau một vài khoảng trống.
+
+T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤N ≤100; 0≤A[i] ≤100.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+
+Ví dụ
+Input #1 
+
+2 
+6
+80 60 30 40 20 10
+9 
+1 15 51 45 33 100 12 18 9
+Output #1 
+
+210
+194
+
+CON5_18 - Cặp số
+ Báo lỗi
+Đề bài
+Cho N cặp số, trong đó số thứ nhất bao giờ cũng nhỏ hơn số thứ 2. Ta nói, cặp số <c, d> được gọi là theo sau cặp số <a,b> nếu b<c. Nhiệm vụ của bạn là tìm số lớn nhất chuỗi các cặp thỏa mãn ràngbuộc trên. Ví dụ với các cặp {<5, 24>, <39, 60>, <15, 28>, <27, 40>, <50, 90>} ta có kết quả là 3 tương ứng với chuỗi các cặp {<5,24>, <27, 40>, <50, 90>}.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưavào N là số cặp <a, b>; dòng tiếp theo đưa vào 2*N số là N cặp số <a, b>; các số đượcviết cách nhau một vài khoảng trống.
+
+T, N, a, b thỏa mãn ràng buộc: 1≤T≤100; 1≤N, a, b ≤100.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+
+Ví dụ
+Input #1 
+
+2 
+5
+5 24 39 60 15 28 27 40 50 90
+2
+5 10 1 11
+Output #1 
+
+3
+1
+
+CON5_19 - KÝ TỰ GIỐNG NHAU
+ Báo lỗi
+Đề bài
+Giả sử bạn cần viết N ký tự giống nhau lên màn hình. Bạn chỉ được phép thực hiện ba thao tác dưới đây với chi phí thời gian khác nhau:
+
+Thao tác insert: chèn một ký tự với thời gian là X.
+
+Thao tác delete: loại bỏ ký tự cuối cùng với thời gian là Y.
+
+Thao tác copying: copy và paste tất cả các ký tự đã viết để số ký tự được nhân đôi với
+
+thời gian là Z.
+
+Hãy tìm thời gian ít nhất để có thể đưa ra màn hình N ký tự giống nhau. Ví dụ với N = 9, X =1, Y = 2, Z =1 ta có kết quả là 5 bằng cách thực hiện: insert, insert, copying, copying, insert.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưavào N là số các ký tự giống nhau cần viết lên màn hình; dòng tiếp theo đưa vào bộ basố X, Y, Z tương ứng với thời gian thực hiện ba thao tác; các số được viết cách nhau
+
+một vài khoảng trống.
+
+T, N, X, Y, Z thỏa mãn ràng buộc: 1≤T≤100; 1≤N ≤100; 1≤X, Y, Z ≤100
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng
+
+
+
+Ví dụ
+Input #1 
+
+2
+9
+1 2 1
+10
+2 5 4
+Output #1 
+
+5
+14
+
+CON5_20 - TỔNG CÁC XÂU CON
+ Báo lỗi
+Đề bài
+Cho số nguyên dương N được biểu diễn như một xâu ký tự số. Nhiệm vụ của bạn là tìm tổng của tất cả các số tạo bởi các xâu con của N. Ví dụ N=”1234” ta có kết quả là 1670 = 1 + 2 + 3 + 4 + 12 + 23 + 34 + 123 + 234 + 1234.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số N.
+
+T, N thỏa mãn ràng buộc: 1≤T≤100; 1≤N ≤10^12.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+
+Ví dụ
+Input #1 
+
+2
+1234
+421
+Output #1 
+
+1670
+491
+
+CON5_21 - TỔNG BẰNG K
+ Báo lỗi
+Đề bài
+Cho một mảng A[] gồm N số nguyên và số K. Tính số cách lấy tổng các phần tử của A[] để bằng K. Phép lấy lặp các phần tử hoặc sắp đặt lại các phần tử được chấp thuận. Ví dụ với mảng A[] = {1, 5, 6}, K = 7 ta có 6 cách sau:
+
+7 = 1 + 1 + 1+1 + 1 + 1+1 (lặp số 1 7 lần)
+
+7 = 1 + 1 + 5 (lặp số 1)
+
+7 = 1 + 5 + 1 (lặp và sắp đặt lại số 1)
+
+7 = 1 + 6
+
+7 = 6 + 1
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưavào N và K; dòng tiếp theo đưa vào N số của mảng A[]; các số được viết cách nhau
+
+một vài khoảng trống.
+
+T, N, K, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤1000; 1≤A[i]≤100.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng. Khi kết quả quá lớn đưa ra kết quả dướidạng modulo với 109+7
+
+
+Ví dụ
+Input #1 
+
+2
+3 7
+1 5 6
+4 14
+12 3 1 9
+Output #1 
+
+6
+150
+
+CON5_22 - TỔNG LỚN NHẤT CỦA DÃY CON KHÔNG KỀ NHAU
+ Báo lỗi
+Đề bài
+Cho dãy số A[] gồm N phần tử. Hãy tìm tổng lớn nhất của dãy con của dãy số A[] sao cho dãy con không có hai số cạnh nhau trong A[]. Ví dụ với A[] = {6, 7, 1, 3, 8, 2, 4} ta có kết quả là 19 tương ứng với tổng của dãy con {6, 1, 6, 4} không có haI phần tử nào kề nhau trong A[].
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất làmột số N; dòng tiếp theo đưa vào N số A[i]; các số được viết cách nhau một vài khoảngtrống.
+
+T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤N ≤10^6; 1≤A[i] ≤10^7.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+
+Ví dụ
+Input #1 
+
+2 
+6
+5 5 10 100 10 5
+4
+3 2 7 10
+Output #1 
+
+110
+13
+
+CON5_23 - SỐ BƯỚC ÍT NHẤT
+ Báo lỗi
+Đề bài
+Cho mảng A[] gồm N số nguyên. Nhiệm vụ của bạn là sắp xếp lại mảng số với số lượng bước là ít nhất. Tại mỗi bước, bạn chỉ được phép chèn phần tử bất kỳ của mảng vào vị trí bất kỳ trong mảng. Ví dụ A[] = {2, 3, 5, 1, 4, 7, 6 }sẽ cho ta số phép chèn ít nhất là 3 bằng cách lấy số 1 chèn trước số 2, lấy số 4 chèn trước số 5, lấy số 6 chèn trước số 7 ta nhận được mảng được sắp.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất làmột số N; dòng tiếp theo đưa vào N số của mảng A[]; các số được viết cách nhau một
+
+vài khoảng trống.
+
+T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤N ≤1000; 1≤A[i] ≤1000.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+1 
+7
+2 3 5 1 4 7 6
+Output #1 
+
+3
+
+CON5_24 - DI CHUYỂN VỀ GỐC TỌA ĐỘ
+ Báo lỗi
+Đề bài
+Giả sử bạn đang ở điểm có tọa độ nguyên dương (n,m) và cần dịch chuyển về tọa độ (0,0). Mỗi bước dịch chuyển bạn chỉ được phép dịch chuyển đến tọa độ (n-1, m) hoặc (n, m-1), hoặc (0,m), hoặc (n, 0). Hãy đếm số cách bạn có thể dịch chuyển về tọa độ (0,0).
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là bộ n, m được viết cách nhaumột vài khoảng trống.
+
+T, n, m thỏa mãn ràng buộc: 1≤T≤100; 1≤n, m ≤25.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng
+
+
+
+Ví dụ
+Input #1 
+
+3
+3 2
+3 6
+3 0
+Output #1 
+
+10
+84
+1
+
+CON7_16 - TÍNH GIÁ TRỊ BIỂU THỨC HẬU TỐ
+ Báo lỗi
+Đề bài
+Hãy viết chương trình chuyển tính toán giá trị của biểu thức hậu tố.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào số lượng bộ test T;
+
+- Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thứchậu tố exp. Các số xuất hiện trong biểu thức là các số đơn có 1 chữ số.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng, chỉ lấy giá trị phần nguyên.
+
+
+Ví dụ
+Input #1 
+
+2
+231*+9–
+875*+9-
+Output #1 
+
+-4
+34
+
+CON7_17 - TÍNH GIÁ TRỊ BIỂU THỨC TIỀN TỐ
+ Báo lỗi
+Đề bài
+Hãy viết chương trình tính toán giá trị của biểu thức tiền tố.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào số lượng bộ test T;
+
+- Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thứctiền tố exp. Các số xuất hiện trong biểu thức là các số đơn có 1 chữ số.
+
+-T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤20.
+
+
+Dữ liệu ra
+- Đưa ra kết quả mỗi test theo từng dòng, chỉ lấy giá trị phần nguyên.
+
+
+Ví dụ
+Input #1 
+
+2
+-+8/632
+-+7*45+20
+Output #1 
+
+8
+25
+
+CON7_18 - TÍNH TOÁN GIÁ TRỊ BIỂU THỨC TRUNG TỐ
+ Báo lỗi
+Đề bài
+Cho biểu thức trung tố S với các toán tử +, -, *, / và dấu ngoặc (). Các toán hạng là các số có giátrị không vượt quá 100. Hãy tính giá trị biểu thức S. Phép chia thực hiện với số nguyên, inputđảm bảo số bị chia luôn khác 0, đáp số biểu thức có không quá 10 chữ số.
+
+
+Dữ liệu vào
+-Dòng đầu tiên là số lượng bộ test (T ≤ 100).
+
+- Mỗi dòng gồm một xâu S, không quá 100 kí tự. Các toán hạng là các số nguyên không âm.
+
+
+Dữ liệu ra
+-Với mỗi test, in ra đáp án tìm được.
+
+
+Ví dụ
+Input #1 
+
+4
+6*3+2-(6-4/2)
+100+99*22
+6*((4*3)+5)
+1-2
+Output #1 
+
+16
+2278
+102
+-1
+
+CON5_2 - DÃY CON TĂNG DÀI NHẤT
+ Báo lỗi
+Đề bài
+Cho một dãy số nguyên gồm N phần tử A[1], A[2], ... A[N]. Biết rằng dãy con tăng là 1 dãy A[i1],... A[ik]
+
+thỏa mãn i1< i2< ... < ikvà A[i1] < A[i2] < .. < A[ik]. Hãy cho biết dãy con tăng dài nhất của dãy này có bao nhiêu phần tử?
+
+
+Dữ liệu vào
+Dòng 1 nhập số lượng test T>0
+
+Dòng 2 gồm 1 số nguyên là số N (1 ≤ N ≤ 1000). Dòng thứ 3 ghi N số nguyên A[1], A[2], .. A[N] (1 ≤ A[i] ≤ 1000)
+
+
+
+Dữ liệu ra
+Ghi ra độ dài của dãy con tăng dài nhất với mỗi test.
+
+
+Ví dụ
+Input #1 
+
+1
+6
+1 2 5 4 6 2
+Output #1 
+
+4
+
+CON5_3 - DÃY CON CÓ TỔNG BẰNG S
+ Báo lỗi
+Đề bài
+Cho 
+N
+N số nguyên dương tạo thành dãy A={
+A
+1
+A 
+1
+​
+ , 
+A
+2
+A 
+2
+​
+ , ..., 
+A
+N
+A 
+N
+​
+ }. Tìm ra một dãy con của dãy 
+A
+A (không nhất thiết là các phần tử liên tiếp trong dãy) có tổng bằng 
+S
+S cho trước.
+
+
+Dữ liệu vào
+Dòng đầu ghi số bộ test 
+T
+T (
+T
+T<10). Mỗi bộ test có hai dòng, dòng đầu tiên ghi hai số nguyên dương 
+N
+N và 
+S
+S (
+0
+<
+N
+≤
+200
+0<N≤200) và 
+S
+S (
+0
+<
+S
+≤
+40000
+0<S≤40000). Dòng tiếp theo lần lượt ghi 
+N
+N số hạng của dãy 
+A
+A là các số 
+A
+1
+A 
+1
+​
+ , 
+A
+2
+A 
+2
+​
+ , ..., 
+A
+N
+A 
+N
+​
+  (0 < 
+A
+i
+A 
+i
+​
+ ≤ 200)
+
+
+Dữ liệu ra
+Với mỗi bộ test, nếu bài toán vô nghiệm thì in ra “NO”, ngược lại in ra “YES”
+
+
+Ví dụ
+Input #1 
+
+2
+5 6
+1 2 4 3 5
+10 15
+2 2 2 2 2 2 2 2 2 2
+Output #1 
+
+YES
+NO
+
+CON5_11 - Số CATALAN
+ Báo lỗi
+Đề bài
+Catalan Number là dãy số thỏa mãn biểu thức:
+
+image.png
+
+Dưới đây là một số số Catalan với n=0, 1,2,.. : 1, 1, 2, 5, 14, 42, 132, 429,… Cho số tự nhiên N. Nhiệm vụ của bạn là đưa ra số Catalan thứ N.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số nguyên n.
+
+T, n thỏa mãn ràng buộc: 1 ≤ T ≤ 100; 1 ≤ n ≤ 100.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+3 
+5 
+4
+10
+Output #1 
+
+42
+14
+16796
+
+CON5_12 - TÍNH P(N,K)
+ Báo lỗi
+Đề bài
+P(n, k) là số phép biểu diễn các tập con có thứ tự gồm k phần tử của tập gồm n phần tử. Số P(n, k) được định nghĩa theo công thức sau:
+
+image.png
+
+Cho số hai số n, k. Hãy tìm P(n,k) theo modulo 10^9+7.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một cặp số n, k được viết trênmột dòng.
+
+T, n, k thỏa mãn ràng buộc: 1 ≤ T ≤ 100; 1 ≤ n,k ≤ 1000.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng
+
+
+Ví dụ
+Input #1 
+
+2
+5 3
+4 2
+Output #1 
+
+20
+12
+
+CON6_24 - Tìm kiếm vòng
+ Báo lỗi
+Đề bài
+Một mảng được sắp được chia thành hai đoạn tăng dần được gọi là mảng sắp xếp vòng. Ví dụ mảng A[] = { 5, 6, 7, 8, 9, 10, 1, 2, 3, 4} là mảng sắp xếp vòng. Cho mảng A[] gồm n phần tử, hãy tìm vị trí của phần tử x trong mảng A[] với thời gian log(n).
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưavào n và x; dòng tiếp theo đưa vào n số A[i]; các số được viết cách nhau một vài
+
+khoảng trống.
+
+T, n, A[i], x thỏa mãn ràng buộc: 1≤T≤100; 1≤N, x, A[i] ≤10^7.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng
+
+
+Ví dụ
+Input #1 
+
+2
+10 3
+5 6 7 8 9 10 1 2 3 4
+10 3
+1 2 3 4 5 6 7 8 9 10
+Output #1 
+
+9
+3
+
+CON6_26 - SẮP XẾP ĐỔI CHỖ TRỰC TIẾP
+ Báo lỗi
+Đề bài
+Hãy thực hiện thuật toán sắp xếp đổi chỗ trực tiếp trên dãy N số nguyên. Ghi ra các bước thực hiện thuật toán.
+
+
+Dữ liệu vào
+Dòng 1 nhập số lượng testcase T>0
+
+Dòng 2 ghi số N (không quá 100). Dòng 3 ghi N số nguyên dương (không quá 100)
+
+
+Dữ liệu ra
+Ghi ra màn hình từng bước thực hiện thuật toán. Mỗi bước trên một dòng, các số trong dãy cách nhau đúng một khoảng trống.
+
+
+Ví dụ
+Input #1 
+
+4
+5 7 3 2
+Output #1 
+
+Buoc 1: 2 7 5 3
+Buoc 2: 2 3 7 5
+Buoc 3: 2 3 5
+
+CON6_27 - Sắp xếp chèn
+ Báo lỗi
+Đề bài
+Hãy thực hiện thuật toán sắp xếp chèn trên dãy N số nguyên. Ghi ra các bước thực hiện thuật toán.
+
+
+Dữ liệu vào
+Dòng 1 nhập số lương testcase T>0
+
+Dòng 2 ghi số N (không quá 100). Dòng 3 ghi N số nguyên dương (không quá 100).
+
+
+Dữ liệu ra
+Ghi ra màn hình từng bước thực hiện thuật toán. Mỗi bước trên một dòng, các số trong dãy cách nhau đúng một khoảng trống với mỗi test
+
+
+Ví dụ
+Input #1 
+
+4
+5 7 3 2
+Output #1 
+
+Buoc 0: 5
+Buoc 1: 5 7
+Buoc 2: 3 5 7
+Buoc 3: 2 3 5 7
+
+CON7_10 - SO SÁNH BIỂU THỨC
+ Báo lỗi
+Đề bài
+Cho P1, P2 là hai biểu thức đúng chỉ bao gồm các ký tự mở ngoặc ‘(’ hoặc đóng ngoặc ‘)’ vàcác toán hạng in thường. Nhiệm vụ của bạn là định xem P1 và P2 có giống nhau hay không.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào số lượng bộ test T;
+
+- Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test gồm hai dòng:dòng thứ nhất đưa vào P1, dòng tiếp theo đưa vào P2.
+
+
+Dữ liệu ra
+- Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+-(a+b+c)
+-a-b-c
+a-b-(c-d)
+a-b-c-d
+Output #1 
+
+YES
+NO
+
+CON6_29 - SẮP XẾP NỔI BỌT
+ Báo lỗi
+Đề bài
+Hãy thực hiện thuật toán sắp xếp nổi bọt trên dãy N số nguyên. Ghi ra các bước thực hiện thuật toán.
+
+
+Dữ liệu vào
+Dòng 1 nhập số lương testcase T>0
+
+Dòng 2 ghi số N (không quá 100). Dòng 3 ghi N số nguyên dương (không quá 100).
+
+
+Dữ liệu ra
+Ghi ra màn hình từng bước thực hiện thuật toán. Mỗi bước trên một dòng, các số trong dãy cách nhau đúng một khoảng trống với mỗi test
+
+
+Ví dụ
+Input #1 
+
+4
+5 3 2 7
+Output #1 
+
+Buoc 1: 3 2 5 7
+Buoc 2: 2 3 5 7
+
+CON6_28 - Sắp xếp chèn
+ Báo lỗi
+Đề bài
+Hãy thực hiện thuật toán sắp xếp chèn trên dãy N số nguyên. Ghi ra các bước thực hiện thuật toán.
+
+
+Dữ liệu vào
+Dòng 1 nhập số lương testcase T>0
+
+Dòng 2 ghi số N (không quá 100). Dòng 3 ghi N số nguyên dương (không quá 100).
+
+
+Dữ liệu ra
+Ghi ra màn hình từng bước thực hiện thuật toán. Mỗi bước trên một dòng, các số trong dãy cách nhau đúng một khoảng trống với mỗi test
+
+
+Ví dụ
+Input #1 
+
+4
+5 7 3 2
+Output #1 
+
+Buoc 3: 2 3 5 7
+Buoc 2: 3 5 7
+Buoc 1: 5 7
+Buoc 0: 5
+
+CON7_11 - BIẾN ĐỔI TRUNG TỐ - HẬU TỐ
+ Báo lỗi
+Đề bài
+Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng trung tố về dạng hậu tố.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào số lượng bộ test T;
+
+- Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thứctiền tố exp.
+
+-T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤10.
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+(A+(B+C)
+((A*B)+C)
+Output #1 
+
+ABC++
+AB*C+
+
+CON7_12 - BIẾN ĐỔI TIỀN TỐ - TRUNG TỐ
+ Báo lỗi
+Đề bài
+Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng tiền tố về dạng trung tố.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào số lượng bộ test T;
+
+-Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thứctiền tố exp.
+
+-T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤10^6
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+*+AB-CD
+*-A/BC-/AKL
+Output #1 
+
+((A+B)*(C-D))
+((A-(B/C))*((A/K)-L)
+
+CON7_13 - BIẾN ĐỐI TIỀN TỐ - HẬU TỐ
+ Báo lỗi
+Đề bài
+Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng tiền tố về dạng hậu tố.
+
+
+Dữ liệu vào
+- Dòng đầu tiên đưa vào số lượng bộ test T;
+
+- Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thứctiền tố exp.
+
+-T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤10^6
+
+
+Dữ liệu ra
+-Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+*+AB-CD
+*-A/BC-/AKL
+Output #1 
+
+AB+CD-*
+ABC/-AK/L-*
+
+CON7_15 - BIẾN ĐỔI HẬU TỐ - TRUNG TỐ
+ Báo lỗi
+Đề bài
+Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng hậu tố về dạng trung tố.
+
+
+Dữ liệu vào
+-Dòng đầu tiên đưa vào số lượng bộ test T;
+
+- Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức tiền tố exp.
+
+- T, exp thỏa màng ràng buộc: 1≤T≤100; 2≤length(exp)≤10^6
+
+.
+
+
+Dữ liệu ra
+- Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+ABC++
+AB*C+
+Output #1 
+
+(A+(B+C)
+((A*B)+C)
+
+CON3_17 - GIÁ TRỊ NHỎ NHẤT CỦA XÂU
+ Báo lỗi
+Đề bài
+Cho xâu ký tự S. Ta gọi giá trị của xâu S là tổng bình phương số lần xuất hiện mỗi ký tự trong S. Hãy
+
+tìm giá trị nhỏ nhất của xâu S sau khi thực hiện K lần loại bỏ ký tự.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là số K; phần thứ hai là một xâu ký tự S được viết trên một dòng.
+T, S, K thỏa mãn ràng buộc: 1≤T≤100; 1≤lengght(S)≤10000; 1≤K≤1000.
+
+Dữ liệu ra
+Output:Đưa ra kết quả mỗi test theo từng dòng.
+
+	
+
+Ví dụ
+Input #1 
+
+2 
+2
+ABCCBC
+2
+AAAB
+Output #1 
+
+6 
+2
+
+CON3_19 - PHÂN SỐ ĐƠN VỊ
+ Báo lỗi
+Đề bài
+Một phân số đơn vị nếu tử số của phân số đó là 1. Mọi phân số nguyên dương đều có thể biểu diễn
+
+thành tổng các phân số đơn vị. Ví dụ 2/3 = 1/2 + 1/6. Cho phân số nguyên dương P/Q bất kỳ (P < Q),
+
+hãy biểu diễn phân số nguyên dương thành tổng phân số đơn vị.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là bộ đôi tử số P và mẫu số Q của phân số nguyên dương được viết trên một dòng.
+T, P, Q thỏa mãn ràng buộc: 1≤T≤100; 1≤P, Q≤100.
+
+Dữ liệu ra
+Output:Đưa ra đáp án tìm được trên 1 dòng, theo dạng “1/a + 1/b + …”
+
+
+Ví dụ
+Input #1 
+
+2
+2 3
+1 3
+Output #1 
+
+1/2 + 1/6
+1/3
+
+CON2_28 - TỔ HỢP SỐ CÓ TỔNG BẰNG X
+ Báo lỗi
+Đề bài
+Cho mảng A[] gồm N số nguyên dương phân biệt và số X. Nhiệm vụ của bạn là tìm phép tổ
+
+hợp các số trong mảng A[] có tổng bằng X. Các số trong mảng A[] có thể được sử dụng nhiều
+
+lần. Mỗi tổ hợp các số của mảng A[] được in ra theo thứ tự không giảm các số. Ví dụ với A[]
+
+= {2, 4, 6, 8}, X = 8 ta có các tổ hợp các số như sau:
+
+[2, 2, 2, 2], [2, 2, 4], [2, 6], [4, 4], [8].
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số N và X; dòng tiếp theo đưa vào N số của mmảng A[]; các số được viết cách nhau một vài khoảng trống.
+T, N, X, A[i] thỏa mãn ràng buộc: 1≤T ≤10; 1≤X, A[i]≤100. N ≤ 20.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng. Mỗi đường tổ hợp được bao bởi cặp kýtự [, ]. Đưa ra -1 nếu không có tổ hợp nào thỏa mãn yêu cầu bài toán.
+
+Ví dụ
+Input #1 
+
+1
+4 8
+2 4 6 8
+Output #1 
+
+[2 2 2 2] [2 2 4] [2 6] [4 4] [8]
+
+CON2_31 - TỪ ĐIỂN
+ Báo lỗi
+Đề bài
+Cho tập từ ghi trong trừ điển dic[] và một bảng hai chiều A[M][N] các ký tự. Hãy tạo nên tất
+
+cả các từ có mặt trong từ điển dic[] bằng cách nối các ký tự kề nhau trong mảng A[][]. Chú ý,
+
+phép nối các ký tự kề nhau trong mảng A[][] được thực hiện theo 8 hướng nhưng không có
+
+phần tử A[i][j] nào được lặp lại. Ví dụ với từ điển dic[] ={ “GEEKS”, “FOR”, “QIUZ”, “GO”}
+
+và mảng A[][] dưới đây sẽ cho ta kết quả: “GEEKS”, “QUIZ”
+
+
+
+Capture.PNG
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào ba số K, M, N tương ứng với số từ của từ điển dic[], số hàng và số cột của ma trận ký tự A[M][N]; dòng tiếp theo đưa vào K từ của từ điển dic[]; dòng cuối cùng đưa vào các phần tử A[i][j].
+T, K, M, N thỏa mãn ràng buộc: 1≤T ≤10; 1≤K≤100; 1≤ M, N ≤3.
+
+Dữ liệu ra
+Output:
+
+Đưa ra theo thứ tự tăng dần các từ có mặt trong từ điển dic[] được tạo ra từ ma trận A[][]. Đưa ra -1 nếu không thể tạo ra từ nào thuộc dic[] từ A[][].
+
+Ví dụ
+Input #1 
+
+1
+4 3 3
+GEEKS FOR QUIZ GO
+G I Z
+U E K
+Q S E
+Output #1 
+
+GEEKS QUIZ
+
+CON2_29 - DI CHUYỂN TRONG MA TRẬN
+ Báo lỗi
+Đề bài
+Cho ma trận A[M][N]. Nhiệm vụ của bạn là đưa ra tất cả các đường đi từ phần tử A[0][0] đến
+
+phần tử A[M-1][N-1]. Bạn chỉ được phép dịch chuyển xuống dưới hoặc sang phải phần tử liền
+
+kề với vị trí hiện tạ
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số M, N tương ứng với số hàng và số cột của ma trận; dòng tiếp theo đưa vào các phần tử của ma trận A[][]; các số được viết cách nhau một vài khoảng trống.
+T, M, N, A[i][j] thỏa mãn ràng buộc: 1≤T ≤10; 1≤M, N, A[i][j]≤100.
+
+Dữ liệu ra
+Output:
+
+Đưa ra số cách di chuyển của mỗi test theo từng dòng.
+Giải thích test 1: Có 3 cách di chuyển là [1 4 5 6], [1 2 5 6] và [1 2 3 6].
+
+Ví dụ
+Input #1 
+
+2
+2 3
+1 2 3
+4 5 6
+2 2
+1 2
+3 4
+Output #1 
+
+3 
+2
+
+CON2_30 - SỐ NGUYÊN TỐ
+ Báo lỗi
+Đề bài
+Cho ba số N, P, S. Trong đó, P là một số nguyên tố. Nhiệm vụ của bạn là đưa ra tất cả N số
+
+nguyên tố tính từ P có tổng bằng S. Ví dụ với S = 28, P=7, N =2 ta có kết quả 11 + 17 = 28.
+
+Với N = 3, P = 2, S = 23 ta có kết quả : {3, 7, 13}, {5, 7, 11}
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là bộ ba số S, P, N được viết trên một dòng.
+S, P, N thỏa mãn ràng buộc: 1≤T ≤100; 1 ≤ N ≤ 10; 2≤S, P≤200.
+
+Dữ liệu ra
+Output:
+
+Với mỗi test, dòng đầu tiên in ra số lượng đáp án tìm được. Mỗi dòng tiếp theo in ra kết quả tìm được theo thứ tự từ điển.
+
+Ví dụ
+Input #1 
+
+2
+2 7 28
+3 2 23
+Output #1 
+
+1
+11 17
+2
+3 7 13
+5 7 11
+
+CON2_32 - LOẠI BỎ DẤU NGOẶC
+ Báo lỗi
+Đề bài
+Cho biểu thức P chỉ chứa các ký tự ‘(’, ‘)’ và các ký tự. Không có phép toán nào trong biểu
+
+thức P. Nhiệm vụ của bạn là thực hiện ít nhất các phép loại bỏ các ký tự ‘(’, ‘)’ để P trở thành
+
+biểu thức đúng. Chú ý: một biểu thức chỉ có 1 ký tự chữ (không có dấu ngoặc) hoặc một biểu
+
+thức rỗng thì không được xem là biểu thức đúng.
+
+Nếu có nhiều hơn một biểu thức đúng với cùng số phép loại bỏ ít nhất hãy đưa ra tất cả các
+
+biểu thức đúng theo thứ tự từ điển.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một biểu thức P được viết trên một dòng.
+T, P thỏa mãn ràng buộc: 1≤T ≤100; 1≤length(P)≤100.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng. Nếu không có đáp án, in ra -1.
+
+Ví dụ
+Input #1 
+
+2
+()())()
+(u)())()
+Output #1 
+
+(())() ()()()
+(u())() (u)()()
+
+CON1_06 - SINH HOÁN VỊ
+ Báo lỗi
+Đề bài
+Cho số nguyên dương N. Nhiệm vụ của bạn là hãy liệt kê tất cả các hoán vị của 1, 2, .., N. Ví
+
+dụ với N = 3 ta có kết quả: 123, 132, 213, 231, 312, 321.
+
+
+Dữ liệu vào
+Input:
+
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên N được viết trên một dòng.
+T, n thỏa mãn ràng buộc: 1≤T, N≤10.
+
+Dữ liệu ra
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+
+Ví dụ
+Input #1 
+
+2 
+2 
+3
+Output #1 
+
+12 21
+123 132 213 231 312 321
+
+CON6_13 - Số lần xuất hiện
+ Báo lỗi
+Đề bài
+Cho mảng A[] gồm n phần tử đã được sắp xếp. Hãy tìm số lần xuất hiện số X trong mảng. Nếu số lần xuất hiện số x trong mảng là 0 hãy đưa ra -1.
+
+
+Dữ liệu vào
+Dòng đầu tiên đưa vào số lượng bộ test T.
+
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưavào N và X; dòng tiếp theo đưa vào n số A[i]; các số được viết cách nhau một vài
+
+khoảng trống.
+
+T, N, X, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤ N ≤10^3, 1≤A[i], X ≤10^6.
+
+
+Dữ liệu ra
+Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Ví dụ
+Input #1 
+
+2
+7 2
+1 1 2 2 2 2 3
+7 4
+1 1 2 2 2 2 3
+Output #1 
+
+4
+-1
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
