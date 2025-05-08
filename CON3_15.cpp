@@ -1,28 +1,21 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-#define ll long long
-#define mod 1000000007
+using ll = long long;
+int n,s,m;
+int main() {
+	iostream::sync_with_stdio(false);
+	int t;
+	cin >> t;
+	while (t--) {
+		cin >> n >> s >> m;
+		if (m > n || s>=7 && n*6<m*7) {
+			cout << "-1" << endl;
+			continue;
+		}
+		if ((s*m) %n !=0) {
+			cout << s*m/n+1 << endl;
+		} else cout << s*m/n << endl;
 
-int main()
-{
-    int t;
-    cin >> t;
-    while (t--)
-    {
-        int n,s,m;
-        cin>>n>>s>>m;
-        int lt=s*m;
-        int day=s-s/7;
-        if(lt>day*n){
-          cout<<"-1\n";
-          continue;
-        }
-        for(int i=1;i<=day;i++){
-          if(lt<=n*i){
-            cout<<i<<"\n";
-            break;
-          }
-        }
-    }
-    return 0;
+	}
+	return 0;
 }
