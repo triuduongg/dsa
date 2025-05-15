@@ -1,30 +1,22 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long
-#define mod 1000000007
-
-int main()
-{
-    int t;
-    cin >> t;
-    while (t--)
-    {
-        string s;
-        int d;
-        cin>>d>>s;
-        int ok=0;
-        map<char,int>mp;
-        for(char c:s)mp[c]++;
-        int max_fre=-1;
-        for(auto it:mp){
-          max_fre=max(max_fre,it.second);
+int main () {
+    int t; cin >> t;
+    while(t--) {
+        int d; string s;
+        cin >> d >> s;
+        map<char, int> mp;
+        for (char key : s) mp[key]++;
+        int max_fre = 0;
+        for(auto value : mp){
+            max_fre = max(max_fre, value.second);
         }
-        int n=s.size();
-        if(max_fre-(n-max_fre)/(d-1)<=1){
-          cout<<"1\n";
+        int len = s.size();
+        if(max_fre < len /(d-1)){
+            cout << "1" << endl;
         }
         else{
-          cout<<"-1\n";
+            cout << "-1" << endl;
         }
     }
     return 0;
