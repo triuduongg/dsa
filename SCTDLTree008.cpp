@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <algorithm>
+#include <queue>
 
 using namespace std;
 
@@ -25,25 +25,18 @@ TreeNode* buildTree(const vector<int>& values, int& index) {
     return node;
 }
 
-// Hàm tìm tất cả các đường đi từ gốc đến lá có tổng = target
-void findPaths(TreeNode* root, int target, vector<int>& path, vector<vector<int>>& result) {
-    if (!root) return;
-
-    // Thêm giá trị nút hiện tại vào đường đi
-    path.push_back(root->val);
-    target -= root->val;
-
-    // Nếu là nút lá và tổng bằng target, lưu đường đi
-    if (!root->left && !root->right && target == 0) {
-        result.push_back(path);
+// Hàm kiểm tra xem có đường đi nào có tổng bằng target không
+bool hasPathSum(TreeNode* root, int target) {
+    if (!root) return false;
+    
+    // Nếu là nút lá, kiểm tra xem tổng có bằng target không
+    if (!root->left && !root->right) {
+        return root->val == target;
     }
-
+    
     // Duyệt qua con trái và con phải
-    findPaths(root->left, target, path, result);
-    findPaths(root->right, target, path, result);
-
-    // Quay lại khi duyệt xong con hiện tại
-    path.pop_back();
+    int newTarget = target - root->val;
+    return hasPathSum(root->left, newTarget) || hasPathSum(root->right, newTarget);
 }
 
 int main() {
@@ -67,25 +60,11 @@ int main() {
         int index = 0;
         TreeNode* root = buildTree(values, index);
         
-        vector<vector<int>> result;
-        vector<int> path;
-        
-        // Tìm tất cả các đường đi có tổng bằng target
-        findPaths(root, target, path, result);
-        
-        if (result.empty()) {
-            cout << "0" << endl;
+        // Kiểm tra có đường đi nào có tổng bằng target không
+        if (hasPathSum(root, target)) {
+            cout << "True" << endl;
         } else {
-            // In tất cả các đường đi
-            for (const auto& p : result) {
-                cout << "[";
-                for (size_t i = 0; i < p.size(); ++i) {
-                    cout << p[i];
-                    if (i < p.size() - 1) cout << ",";
-                }
-                cout << "]";
-            }
-            cout << endl;
+            cout << "False" << endl;
         }
     }
     
