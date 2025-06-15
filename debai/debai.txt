@@ -6990,6 +6990,42 @@ Output #1
 
 True
 
+KTCOBAN025 - Số Catalan thứ n
+Báo lỗi
+Đề bài
+
+Các số Catalan là số thoả mãn điều kiện sau:
+
+image.png
+
+Cho số n, hãy tìm giá trị số Catalan thứ n.
+Dữ liệu vào
+
+-Số lượng testcase t (0<t<103103).
+
+- Với mỗi testcase, nhập vào số nguyên dương n (1≤n≤31).
+Dữ liệu ra
+
+- Mỗi dòng tương ứng một testcase, cho biết số tìm được.
+Ví dụ
+
+Input #1
+
+4
+2
+4
+7
+9
+
+Output #1
+
+2
+14
+429
+4862
+
+
+
 
 
 
