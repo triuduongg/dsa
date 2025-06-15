@@ -7082,58 +7082,28 @@ Output #1
 10
 15
 
+KTCOBAN105 - GẮN DÂY
+Báo lỗi
+Đề bài
 
+Có N sợi dây cần nối lại với nhau thành một sợi duy nhất. Mỗi lần chỉ được phép nối 2 sợi dây với nhau. Thời gian để nối hai sợi dây có độ dài a và b mất tổng cộng a + b phút. Hãy tính xem cần ít nhất bao nhiêu thời gian để có thể nối xong N sợi dây?
+Dữ liệu vào
 
+Dòng đầu tiên đưa vào số lượng bộ test T (0<T<103103)
 
+Với mỗi test nhập vào số nguyên N (N ≤ 2*106106). Dòng tiếp theo gồm N số nguyên dương c[i] (1 ≤ c[i] ≤ 109109).
+Dữ liệu ra
 
+In ra kết quả của bài toán theo modulo 109109 +7.
+Ví dụ
 
+Input #1
 
+1
+7 
+2 4 1 2 10 2 3
 
+Output #1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+59
 
