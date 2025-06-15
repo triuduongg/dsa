@@ -7052,6 +7052,36 @@ Output #1
 22
 7
 
+KTCOBAN017 - Dãy con liên tiếp tổng lớn nhất
+Báo lỗi
+Đề bài
+
+Cho mảng các số nguyên A có n phần tử (0≤n≤10151015). Hãy tìm giá trị tổng của dãy con liên tiếp có tổng lớn nhất trong A.
+
+Ví dụ: Dãy A với n=8: A={-5, -3, 4, -1, -1,1, 4, -2}, tổng dãy liên tiếp lớn nhất là 7.
+Dữ liệu vào
+
+- Số lượng test T (0<T<103103).
+
+- Với mỗi test, dòng đầu là số nguyên dương n, dòng sau là các phần tử của dãy số nguyên A, mỗi số cách nhau bởi ít nhất một dấu cách.
+Dữ liệu ra
+
+- Mỗi dòng tương ứng với một test ghi kết quả tìm được.
+Ví dụ
+
+Input #1
+
+2
+10
+2 -3 2 -1 5 3 -4 -1 6 -1 
+5
+1 2 3 4 5
+
+Output #1
+
+10
+15
+
 
 
 
